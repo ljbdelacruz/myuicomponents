@@ -1,0 +1,6 @@
+framework module Pods_UIComponentsFramework {
+  umbrella header "Pods-UIComponentsFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
