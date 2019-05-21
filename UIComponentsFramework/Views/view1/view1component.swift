@@ -18,6 +18,7 @@ public class view1component: UIView {
     @IBOutlet weak var value2: UILabel!
     @IBOutlet weak var myprogressHUD: myProgressHUDBasic!
     public let xibname:String="view1"
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
