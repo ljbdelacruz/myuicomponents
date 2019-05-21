@@ -28,6 +28,8 @@ public class Content1View: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
+        self.mylabel.text="";
+        self.mycontent.text="";
     }
     public func unsetImage(){
         mylabel.translatesAutoresizingMaskIntoConstraints = false

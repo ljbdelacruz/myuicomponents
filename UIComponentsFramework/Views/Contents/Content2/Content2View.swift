@@ -20,6 +20,8 @@ public class Content2View: UIView {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
+        mytitle.text="";
+        mycontent.text="";
     }
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
