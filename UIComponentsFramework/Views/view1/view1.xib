@@ -32,25 +32,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeN-bn-BvQ">
-                    <rect key="frame" x="16" y="52" width="55" height="20.5"/>
+                    <rect key="frame" x="16" y="50" width="55" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-pd-ONA">
-                    <rect key="frame" x="72" y="59" width="10" height="12"/>
+                    <rect key="frame" x="72" y="56" width="10" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-lT-TAm">
-                    <rect key="frame" x="83" y="59" width="33" height="12"/>
+                    <rect key="frame" x="83" y="56" width="33" height="12"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2l-N2-2J2">
-                    <rect key="frame" x="16" y="75" width="335" height="29"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2l-N2-2J2" customClass="myProgressHUDBasic" customModule="UIComponentsFramework" customModuleProvider="target">
+                    <rect key="frame" x="16" y="73" width="335" height="29"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="29" id="h9z-F3-DVw"/>
@@ -61,16 +61,16 @@
             <constraints>
                 <constraint firstItem="PeN-bn-BvQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="3Gk-SX-iDZ"/>
                 <constraint firstItem="G2l-N2-2J2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="7fl-NM-Qdo"/>
-                <constraint firstItem="PeN-bn-BvQ" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="11" id="8ng-3j-hmR"/>
+                <constraint firstItem="PeN-bn-BvQ" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="9" id="8ng-3j-hmR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G2l-N2-2J2" secondAttribute="trailing" constant="24" id="AAg-Vd-xnV"/>
-                <constraint firstItem="dfs-lT-TAm" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="18" id="RUU-Pk-t4w"/>
+                <constraint firstItem="dfs-lT-TAm" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="15" id="RUU-Pk-t4w"/>
                 <constraint firstItem="I5c-LE-cvj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="UXv-8e-BEr"/>
                 <constraint firstItem="dfs-lT-TAm" firstAttribute="leading" secondItem="mJd-pd-ONA" secondAttribute="trailing" constant="1" id="cHc-X5-6VC"/>
                 <constraint firstItem="mJd-pd-ONA" firstAttribute="leading" secondItem="PeN-bn-BvQ" secondAttribute="trailing" constant="1" id="g6d-9X-b7h"/>
                 <constraint firstItem="I5c-LE-cvj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="l0Q-ad-RBD"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I5c-LE-cvj" secondAttribute="trailing" constant="16" id="z95-pn-rwG"/>
                 <constraint firstItem="G2l-N2-2J2" firstAttribute="top" secondItem="PeN-bn-BvQ" secondAttribute="bottom" constant="2.5" id="zbE-LT-JV0"/>
-                <constraint firstItem="mJd-pd-ONA" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="18" id="zxx-Zf-Omm"/>
+                <constraint firstItem="mJd-pd-ONA" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="15" id="zxx-Zf-Omm"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

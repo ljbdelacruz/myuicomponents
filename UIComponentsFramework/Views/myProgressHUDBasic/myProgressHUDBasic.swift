@@ -2,7 +2,7 @@
 //  myProgressHUDBasic.swift
 //  UIComponentsFramework
 //
-//  Created by devops on 21/05/2019.
+//  Created by Lainel John Dela Cruz on 21/05/2019.
 //  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
 //
 
@@ -14,7 +14,11 @@ public class myProgressHUDBasic: UIView {
     public var backgroundColorHex:String="";
     @IBOutlet var contentview: UIView!
     public let xibname:String="myProgressHUDBasic";
-    
+    public func setColor(highColorHex:String, bColorHex:String, bgColorHex:String){
+        self.progressColorHex=highColorHex;
+        self.borderColorHex=bColorHex;
+        self.backgroundColorHex=bgColorHex;
+    }
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -25,11 +29,9 @@ public class myProgressHUDBasic: UIView {
     }
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
-        
         self.fixInView(self)
         self.setBarHighlight(ratio: 0.5);
     }
-    
 }
 extension myProgressHUDBasic{
     public func setBarHighlight(ratio: Double) {

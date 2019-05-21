@@ -16,7 +16,7 @@ public class view1component: UIView {
     @IBOutlet weak var value1: UILabel!
     @IBOutlet weak var of: UILabel!
     @IBOutlet weak var value2: UILabel!
-    @IBOutlet weak var myprogressHUD: UIView!
+    @IBOutlet weak var myprogressHUD: myProgressHUDBasic!
     public let xibname:String="view1"
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,21 +29,14 @@ public class view1component: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
-        self.setBarHighlight(ratio: 0.5);
-    }
-
-}
-
-extension view1component{
-    public func setBarHighlight(ratio: Double) {
-//        let highlightColor = UiUtil.hexStringToUIColor(hex: "B41E8C")
-        let highlightColor=UIColor.blue;
-        let highlightViewFrame = CGRect(x: myprogressHUD.bounds.origin.x, y: myprogressHUD.bounds.origin.y, width: myprogressHUD.frame.width * CGFloat(ratio), height: myprogressHUD.frame.height)
-        let highlightView = UIView(frame: highlightViewFrame)
-        highlightView.backgroundColor = highlightColor
-        myprogressHUD.layer.borderWidth=0.5;
-        myprogressHUD.layer.borderColor=UIColor.gray.cgColor;
-        myprogressHUD.addSubview(highlightView)
+        self.myprogressHUD.setBarHighlight(ratio: 0.5);
     }
 }
+//MARK: Setting properties
+extension view1component {
+    public func setProgressHUDColor(highlightColorHex:String, bgColorHex:String, borderColorHex:String){
+        self.myprogressHUD.setColor(highColorHex: highlightColorHex, bColorHex: borderColorHex, bgColorHex: bgColorHex)
+    }
+}
+
 
