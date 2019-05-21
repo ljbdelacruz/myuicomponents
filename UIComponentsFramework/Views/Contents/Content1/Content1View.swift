@@ -8,15 +8,16 @@
 
 import UIKit
 
-class Content1View: UIView {
+public class Content1View: UIView {
     public let xibname:String="Content1View";
-    @IBOutlet var contentview: UIView!
+    @IBOutlet public var contentview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mylabel: UILabel!
     @IBOutlet public weak var mycontent: UILabel!
     public var eventOnClick: (() -> Void)?
     
-    override public init(frame: CGRect) {
+    
+    override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
     }
@@ -32,8 +33,6 @@ class Content1View: UIView {
         mylabel.translatesAutoresizingMaskIntoConstraints = false
         self.trailingAnchor.constraint(equalTo: contentview.trailingAnchor, constant: 1);
     }
-    
-    
 }
 
 extension Content1View{
