@@ -8,14 +8,23 @@
 
 import UIKit
 
-class Toolbar1: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+public class Toolbar1: UIView {
+    public let xibname:String="Toolbar1";
+    @IBOutlet var contentview: UIView!
+    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var centerImage: UIImageView!
+    @IBOutlet weak var rightButton: UIButton!
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
     }
-    */
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    public func commonInit() {
+        Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
+        contentview.fixInView(self)
+    }
 
 }
