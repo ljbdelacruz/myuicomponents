@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074CA22938FA500BE0F51 /* UiUtil.swift */; };
+		041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041074CE2293903600BE0F51 /* myProgressHUDBasic.xib */; };
+		041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074D02293905300BE0F51 /* myProgressHUDBasic.swift */; };
+		041074D4229390C900BE0F51 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074D3229390C900BE0F51 /* UIView+.swift */; };
 		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
 		EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB7A20A2290E36600A0C3F2 /* view1.xib */; };
-		EEB7A20E229116E900A0C3F2 /* M13ProgressSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB7A20D229116E900A0C3F2 /* M13ProgressSuite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041074CA22938FA500BE0F51 /* UiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUtil.swift; sourceTree = "<group>"; };
+		041074CE2293903600BE0F51 /* myProgressHUDBasic.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myProgressHUDBasic.xib; sourceTree = "<group>"; };
+		041074D02293905300BE0F51 /* myProgressHUDBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProgressHUDBasic.swift; sourceTree = "<group>"; };
+		041074D3229390C900BE0F51 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -23,7 +30,6 @@
 		EEB7A1FF2290E30600A0C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB7A2082290E35800A0C3F2 /* view1component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view1component.swift; sourceTree = "<group>"; };
 		EEB7A20A2290E36600A0C3F2 /* view1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = view1.xib; sourceTree = "<group>"; };
-		EEB7A20D229116E900A0C3F2 /* M13ProgressSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = M13ProgressSuite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB7A20E229116E900A0C3F2 /* M13ProgressSuite.framework in Frameworks */,
 				E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +44,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041074C922938F9300BE0F51 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				041074CA22938FA500BE0F51 /* UiUtil.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		041074CD2293900500BE0F51 /* myProgressHUDBasic */ = {
+			isa = PBXGroup;
+			children = (
+				041074CE2293903600BE0F51 /* myProgressHUDBasic.xib */,
+				041074D02293905300BE0F51 /* myProgressHUDBasic.swift */,
+			);
+			path = myProgressHUDBasic;
+			sourceTree = "<group>";
+		};
+		041074D22293909C00BE0F51 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				041074D3229390C900BE0F51 /* UIView+.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +107,8 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				041074D22293909C00BE0F51 /* extensions */,
+				041074C922938F9300BE0F51 /* helpers */,
 				EEB7A20C229116D100A0C3F2 /* sdks */,
 				EEB7A2062290E31C00A0C3F2 /* Views */,
 				EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */,
@@ -88,6 +120,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				041074CD2293900500BE0F51 /* myProgressHUDBasic */,
 				EEB7A2072290E32C00A0C3F2 /* view1 */,
 			);
 			path = Views;
@@ -105,7 +138,6 @@
 		EEB7A20C229116D100A0C3F2 /* sdks */ = {
 			isa = PBXGroup;
 			children = (
-				EEB7A20D229116E900A0C3F2 /* M13ProgressSuite.framework */,
 			);
 			path = sdks;
 			sourceTree = "<group>";
@@ -181,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
+				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041074D4229390C900BE0F51 /* UIView+.swift in Sources */,
+				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
+				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +389,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -363,6 +399,7 @@
 				);
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,7 +422,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -395,6 +432,7 @@
 				);
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import M13ProgressSuite
 
 
 public class view1component: UIView {
@@ -17,9 +16,8 @@ public class view1component: UIView {
     @IBOutlet weak var value1: UILabel!
     @IBOutlet weak var of: UILabel!
     @IBOutlet weak var value2: UILabel!
-    @IBOutlet weak var myprogresshud: M13ProgressViewBar!
+    @IBOutlet weak var myprogressHUD: UIView!
     public let xibname:String="view1"
-    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -31,23 +29,21 @@ public class view1component: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
-        self.myprogresshud.showPercentage=true;
-        self.myprogresshud.progressBarCornerRadius=0.1;
-        self.myprogresshud.failureColor=UIColor.red;
-        self.myprogresshud.setProgress(50, animated: true);
+        self.setBarHighlight(ratio: 0.5);
     }
 
 }
 
-extension UIView
-{
-    public func fixInView(_ container: UIView!) -> Void{
-        self.translatesAutoresizingMaskIntoConstraints = false;
-        self.frame = container.frame;
-        container.addSubview(self);
-        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+extension view1component{
+    public func setBarHighlight(ratio: Double) {
+//        let highlightColor = UiUtil.hexStringToUIColor(hex: "B41E8C")
+        let highlightColor=UIColor.blue;
+        let highlightViewFrame = CGRect(x: myprogressHUD.bounds.origin.x, y: myprogressHUD.bounds.origin.y, width: myprogressHUD.frame.width * CGFloat(ratio), height: myprogressHUD.frame.height)
+        let highlightView = UIView(frame: highlightViewFrame)
+        highlightView.backgroundColor = highlightColor
+        myprogressHUD.layer.borderWidth=0.5;
+        myprogressHUD.layer.borderColor=UIColor.gray.cgColor;
+        myprogressHUD.addSubview(highlightView)
     }
 }
+

@@ -14,7 +14,7 @@
             <connections>
                 <outlet property="contentview" destination="iN0-l3-epB" id="upD-ze-TGn"/>
                 <outlet property="label" destination="I5c-LE-cvj" id="Hfc-Pi-ppQ"/>
-                <outlet property="myprogresshud" destination="z1V-IE-6CA" id="FbR-ZC-0th"/>
+                <outlet property="myprogressHUD" destination="G2l-N2-2J2" id="FQw-cb-SMn"/>
                 <outlet property="of" destination="mJd-pd-ONA" id="AMc-GG-ThH"/>
                 <outlet property="value1" destination="PeN-bn-BvQ" id="PJ0-r9-ObR"/>
                 <outlet property="value2" destination="dfs-lT-TAm" id="MZs-64-6yi"/>
@@ -49,22 +49,27 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-IE-6CA" customClass="M13ProgressViewBorderedBar" customModule="M13ProgressSuite">
-                    <rect key="frame" x="16" y="73" width="343" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2l-N2-2J2">
+                    <rect key="frame" x="16" y="75" width="335" height="29"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="h9z-F3-DVw"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="PeN-bn-BvQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="3Gk-SX-iDZ"/>
+                <constraint firstItem="G2l-N2-2J2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="7fl-NM-Qdo"/>
                 <constraint firstItem="PeN-bn-BvQ" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="11" id="8ng-3j-hmR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G2l-N2-2J2" secondAttribute="trailing" constant="24" id="AAg-Vd-xnV"/>
                 <constraint firstItem="dfs-lT-TAm" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="18" id="RUU-Pk-t4w"/>
                 <constraint firstItem="I5c-LE-cvj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="UXv-8e-BEr"/>
                 <constraint firstItem="dfs-lT-TAm" firstAttribute="leading" secondItem="mJd-pd-ONA" secondAttribute="trailing" constant="1" id="cHc-X5-6VC"/>
                 <constraint firstItem="mJd-pd-ONA" firstAttribute="leading" secondItem="PeN-bn-BvQ" secondAttribute="trailing" constant="1" id="g6d-9X-b7h"/>
                 <constraint firstItem="I5c-LE-cvj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="l0Q-ad-RBD"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I5c-LE-cvj" secondAttribute="trailing" constant="16" id="z95-pn-rwG"/>
+                <constraint firstItem="G2l-N2-2J2" firstAttribute="top" secondItem="PeN-bn-BvQ" secondAttribute="bottom" constant="2.5" id="zbE-LT-JV0"/>
                 <constraint firstItem="mJd-pd-ONA" firstAttribute="top" secondItem="I5c-LE-cvj" secondAttribute="bottom" constant="18" id="zxx-Zf-Omm"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
