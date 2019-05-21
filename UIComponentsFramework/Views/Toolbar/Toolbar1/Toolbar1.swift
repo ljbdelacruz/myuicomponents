@@ -5,9 +5,7 @@
 //  Created by devops on 21/05/2019.
 //  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
 //
-
 import UIKit
-
 public class Toolbar1: UIView {
     public let xibname:String="Toolbar1";
     @IBOutlet var contentview: UIView!
@@ -36,7 +34,4 @@ public class Toolbar1: UIView {
     @IBAction func leftButtonOnClick(_ sender: Any) {
         leftActionButton?();
     }
-    
-    
-    
 }

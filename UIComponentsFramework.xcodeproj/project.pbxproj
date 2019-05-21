@@ -20,6 +20,7 @@
 		041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041074EB2293B52800BE0F51 /* Assets.xcassets */; };
 		041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074EE2293C7B500BE0F51 /* BackgroundImage.swift */; };
 		041074F12293CA2000BE0F51 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074F02293CA2000BE0F51 /* BackgroundView.swift */; };
+		041074F32293CBFC00BE0F51 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 041074F22293CBFC00BE0F51 /* readme.md */; };
 		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
@@ -40,6 +41,7 @@
 		041074EB2293B52800BE0F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041074EE2293C7B500BE0F51 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 		041074F02293CA2000BE0F51 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		041074F22293CBFC00BE0F51 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		EEB7A1F12290E30600A0C3F2 = {
 			isa = PBXGroup;
 			children = (
+				041074F22293CBFC00BE0F51 /* readme.md */,
 				EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */,
 				EEB7A1FC2290E30600A0C3F2 /* Products */,
 				64E2F4A0D51B0D35D1948A46 /* Pods */,
@@ -315,6 +318,7 @@
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
+				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 			);
