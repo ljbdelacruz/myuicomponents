@@ -14,6 +14,9 @@ public class Toolbar1: UIView {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var centerImage: UIImageView!
     @IBOutlet weak var rightButton: UIButton!
+    public var leftActionButton: (() -> Void)?
+    public var rightActionButton: (() -> Void)?
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -26,5 +29,14 @@ public class Toolbar1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
-
+    
+    @IBAction func rightButtonOnClick(_ sender: Any) {
+        rightActionButton?();
+    }
+    @IBAction func leftButtonOnClick(_ sender: Any) {
+        leftActionButton?();
+    }
+    
+    
+    
 }

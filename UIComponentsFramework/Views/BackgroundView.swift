@@ -10,9 +10,6 @@ import UIKit
 
 public class BackgroundView: UIView {
     public var bgColorHex:String="";
-    
-    
-    
     public func setupBackground(view:UIView){
         view.addSubview(self);
         self.translatesAutoresizingMaskIntoConstraints = false

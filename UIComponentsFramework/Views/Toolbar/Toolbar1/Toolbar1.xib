@@ -29,6 +29,9 @@
                         <constraint firstAttribute="height" constant="48" id="SHS-gX-fwi"/>
                     </constraints>
                     <state key="normal" image="ic_back_arrow_white"/>
+                    <connections>
+                        <action selector="leftButtonOnClick:" destination="-1" eventType="touchDown" id="8jF-MJ-Sck"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-cp-Bn4">
                     <rect key="frame" x="56" y="0.0" width="263" height="93"/>
@@ -42,6 +45,9 @@
                         <constraint firstAttribute="height" constant="48" id="sQc-ki-aCM"/>
                     </constraints>
                     <state key="normal" image="ic_notifications_white"/>
+                    <connections>
+                        <action selector="rightButtonOnClick:" destination="-1" eventType="touchDown" id="v0E-tT-Nfn"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
