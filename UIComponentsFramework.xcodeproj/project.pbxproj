@@ -25,6 +25,10 @@
 		041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041074F72293D02000BE0F51 /* OTP4DigitView.xib */; };
 		041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074F92293D10700BE0F51 /* OTP4DigitView.swift */; };
 		041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074FB2293D33700BE0F51 /* UITextField+.swift */; };
+		041075002293D65500BE0F51 /* Content1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041074FF2293D65500BE0F51 /* Content1View.xib */; };
+		041075022293D6EF00BE0F51 /* Content1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041075012293D6EF00BE0F51 /* Content1View.swift */; };
+		041075052293D85E00BE0F51 /* Content2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041075042293D85E00BE0F51 /* Content2View.xib */; };
+		041075072293D8EB00BE0F51 /* Content2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041075062293D8EB00BE0F51 /* Content2View.swift */; };
 		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
@@ -50,6 +54,10 @@
 		041074F72293D02000BE0F51 /* OTP4DigitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTP4DigitView.xib; sourceTree = "<group>"; };
 		041074F92293D10700BE0F51 /* OTP4DigitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP4DigitView.swift; sourceTree = "<group>"; };
 		041074FB2293D33700BE0F51 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		041074FF2293D65500BE0F51 /* Content1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content1View.xib; sourceTree = "<group>"; };
+		041075012293D6EF00BE0F51 /* Content1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content1View.swift; sourceTree = "<group>"; };
+		041075042293D85E00BE0F51 /* Content2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content2View.xib; sourceTree = "<group>"; };
+		041075062293D8EB00BE0F51 /* Content2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content2View.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +191,33 @@
 			path = OTP4Digit;
 			sourceTree = "<group>";
 		};
+		041074FD2293D5E500BE0F51 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				041075032293D84D00BE0F51 /* Content2 */,
+				041074FE2293D60300BE0F51 /* Content1 */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		041074FE2293D60300BE0F51 /* Content1 */ = {
+			isa = PBXGroup;
+			children = (
+				041074FF2293D65500BE0F51 /* Content1View.xib */,
+				041075012293D6EF00BE0F51 /* Content1View.swift */,
+			);
+			path = Content1;
+			sourceTree = "<group>";
+		};
+		041075032293D84D00BE0F51 /* Content2 */ = {
+			isa = PBXGroup;
+			children = (
+				041075042293D85E00BE0F51 /* Content2View.xib */,
+				041075062293D8EB00BE0F51 /* Content2View.swift */,
+			);
+			path = Content2;
+			sourceTree = "<group>";
+		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +273,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				041074FD2293D5E500BE0F51 /* Contents */,
 				041074F62293D00900BE0F51 /* OTP4Digit */,
 				041074E42293B4C800BE0F51 /* Toolbar */,
 				041074D62293997C00BE0F51 /* popUp */,
@@ -335,11 +371,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				041074DF2293A25600BE0F51 /* PopupBasic2.xib in Resources */,
+				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
+				041075002293D65500BE0F51 /* Content1View.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 			);
@@ -382,8 +420,10 @@
 				041074E12293A27E00BE0F51 /* PopupBasic2.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
+				041075072293D8EB00BE0F51 /* Content2View.swift in Sources */,
 				041074D4229390C900BE0F51 /* UIView+.swift in Sources */,
 				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
+				041075022293D6EF00BE0F51 /* Content1View.swift in Sources */,
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
