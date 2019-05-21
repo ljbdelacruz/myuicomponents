@@ -13,6 +13,8 @@
 		041074D4229390C900BE0F51 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074D3229390C900BE0F51 /* UIView+.swift */; };
 		041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041074D8229399A700BE0F51 /* PopupBasic1.xib */; };
 		041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074DB22939A3200BE0F51 /* PopupBasic1.swift */; };
+		041074DF2293A25600BE0F51 /* PopupBasic2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041074DE2293A25600BE0F51 /* PopupBasic2.xib */; };
+		041074E12293A27E00BE0F51 /* PopupBasic2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041074E02293A27E00BE0F51 /* PopupBasic2.swift */; };
 		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
@@ -26,6 +28,8 @@
 		041074D3229390C900BE0F51 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		041074D8229399A700BE0F51 /* PopupBasic1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupBasic1.xib; sourceTree = "<group>"; };
 		041074DB22939A3200BE0F51 /* PopupBasic1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBasic1.swift; sourceTree = "<group>"; };
+		041074DE2293A25600BE0F51 /* PopupBasic2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupBasic2.xib; sourceTree = "<group>"; };
+		041074E02293A27E00BE0F51 /* PopupBasic2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBasic2.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +80,7 @@
 		041074D62293997C00BE0F51 /* popUp */ = {
 			isa = PBXGroup;
 			children = (
-				041074DA22939A0400BE0F51 /* basic1Content */,
+				041074DD22939F7D00BE0F51 /* basic2 */,
 				041074D72293999600BE0F51 /* basic1 */,
 			);
 			path = popUp;
@@ -91,11 +95,13 @@
 			path = basic1;
 			sourceTree = "<group>";
 		};
-		041074DA22939A0400BE0F51 /* basic1Content */ = {
+		041074DD22939F7D00BE0F51 /* basic2 */ = {
 			isa = PBXGroup;
 			children = (
+				041074DE2293A25600BE0F51 /* PopupBasic2.xib */,
+				041074E02293A27E00BE0F51 /* PopupBasic2.swift */,
 			);
-			path = basic1Content;
+			path = basic2;
 			sourceTree = "<group>";
 		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
@@ -242,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041074DF2293A25600BE0F51 /* PopupBasic2.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
@@ -280,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041074E12293A27E00BE0F51 /* PopupBasic2.swift in Sources */,
 				041074D4229390C900BE0F51 /* UIView+.swift in Sources */,
 				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,

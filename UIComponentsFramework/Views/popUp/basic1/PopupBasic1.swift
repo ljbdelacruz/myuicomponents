@@ -9,25 +9,29 @@
 import UIKit
 
 public class PopupBasic1: UIView {
+    //MARK: Variables
     public let xibname:String="PopupBasic1"
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var darkBG: UIView!
     @IBOutlet weak var popupContainer: UIView!
-    
     @IBOutlet weak var myTitle: UILabel!
     @IBOutlet weak var myDescription: UITextView!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var firstButton: UIButton!
+    public var firstActionButton: (() -> Void)?
+    public var secondActionButton: (() -> Void)?
     
-    
-    @IBAction func firstButtonOnClick(_ sender: Any) {
+    //MARK: Event Handler
+    @IBAction func firstButtonOnClick(_ sender: Any){
+        firstActionButton?();
     }
     @IBAction func secondButtonOnClick(_ sender: Any) {
+        secondActionButton?();
     }
     
     
     
-    
+    //MARK: initialization
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
