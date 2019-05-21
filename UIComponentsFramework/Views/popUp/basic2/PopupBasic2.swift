@@ -11,7 +11,6 @@ import UIKit
 public class PopupBasic2: UIView {
     public let xibname:String="PopupBasic2"
     @IBOutlet var contentview: UIView!
-    @IBOutlet weak var blackBG: UIView!
     @IBOutlet weak var viewContainer: UIView!
     override public init(frame: CGRect) {
         super.init(frame: frame)

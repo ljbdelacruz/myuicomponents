@@ -12,7 +12,6 @@ public class PopupBasic1: UIView {
     //MARK: Variables
     public let xibname:String="PopupBasic1"
     @IBOutlet var contentview: UIView!
-    @IBOutlet weak var darkBG: UIView!
     @IBOutlet weak var popupContainer: UIView!
     @IBOutlet weak var myTitle: UILabel!
     @IBOutlet weak var myDescription: UITextView!
