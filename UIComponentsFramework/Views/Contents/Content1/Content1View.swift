@@ -36,7 +36,7 @@ public class Content1View: UIView {
         self.trailingAnchor.constraint(equalTo: contentview.trailingAnchor, constant: 1);
     }
 }
-
+//MARK: setting up recognizer
 extension Content1View{
     public func getRecog()->UITapGestureRecognizer{
         let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))

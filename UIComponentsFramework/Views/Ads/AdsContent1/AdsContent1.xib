@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdsContent1" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="button1" destination="eYa-h9-gJM" id="7wA-qx-7F7"/>
+                <outlet property="button2" destination="qls-4t-ySs" id="tmg-L5-VHj"/>
+                <outlet property="contentview" destination="iN0-l3-epB" id="cA2-5z-SVL"/>
+                <outlet property="myimage" destination="z6T-g6-UCC" id="LiE-y0-LlQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieposter" translatesAutoresizingMaskIntoConstraints="NO" id="z6T-g6-UCC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-h9-gJM">
+                    <rect key="frame" x="0.0" y="207" width="189" height="51"/>
+                    <color key="backgroundColor" red="0.4941176471" green="0.3411764706" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="YTf-uy-YxI"/>
+                        <constraint firstAttribute="width" constant="189" id="uKf-RS-a44"/>
+                    </constraints>
+                    <state key="normal" title="Button1">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qls-4t-ySs">
+                    <rect key="frame" x="189" y="207" width="186" height="51"/>
+                    <color key="backgroundColor" red="0.4941176471" green="0.3411764706" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="1pF-OP-E4o"/>
+                        <constraint firstAttribute="width" constant="186" id="TIq-lL-MVf"/>
+                    </constraints>
+                    <state key="normal" title="Button2">
+                        <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eYa-h9-gJM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GXw-Cs-uQ5"/>
+                <constraint firstItem="qls-4t-ySs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="P3u-hI-CGz"/>
+                <constraint firstItem="eYa-h9-gJM" firstAttribute="top" secondItem="z6T-g6-UCC" secondAttribute="bottom" id="Ygw-sH-enG"/>
+                <constraint firstItem="qls-4t-ySs" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ZlL-SJ-JKI"/>
+                <constraint firstItem="z6T-g6-UCC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="g1L-D3-rKR"/>
+                <constraint firstItem="z6T-g6-UCC" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="p7z-XJ-DKN"/>
+                <constraint firstItem="qls-4t-ySs" firstAttribute="top" secondItem="z6T-g6-UCC" secondAttribute="bottom" id="pYF-4O-vNo"/>
+                <constraint firstItem="eYa-h9-gJM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="q4C-Ae-giW"/>
+                <constraint firstItem="qls-4t-ySs" firstAttribute="leading" secondItem="eYa-h9-gJM" secondAttribute="trailing" id="rr9-5N-zzf"/>
+                <constraint firstItem="z6T-g6-UCC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y0Z-VW-8jT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="337.33133433283359"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="movieposter" width="468" height="263.25"/>
+    </resources>
+</document>

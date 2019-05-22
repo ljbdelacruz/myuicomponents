@@ -12,5 +12,5 @@ import Foundation
 extension UITextField{
     func clear() {
         self.text = ""
-    }    
+    }
 }
