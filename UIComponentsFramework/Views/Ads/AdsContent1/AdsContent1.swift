@@ -10,18 +10,19 @@ import UIKit
 
 public class AdsContent1: UIView {
     public let xibname:String="AdsContent1";
-    @IBOutlet var contentview: UIView!
-    @IBOutlet weak var myimage: UIImageView!
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
+    @IBOutlet public var contentview: UIView!
+    @IBOutlet public weak var myimage: UIImageView!
+    @IBOutlet public weak var button1: UIButton!
+    @IBOutlet public weak var button2: UIButton!
+    //eventClickHandler
     public var button1OnClick: (() -> Void)?
     public var button2OnClick: (() -> Void)?
     
     //Constraints controls
-    @IBOutlet weak var button1HC: NSLayoutConstraint!
-    @IBOutlet weak var button1WC: NSLayoutConstraint!
-    @IBOutlet weak var button2HC: NSLayoutConstraint!
-    @IBOutlet weak var button2WC: NSLayoutConstraint!
+    @IBOutlet public weak var button1HC: NSLayoutConstraint!
+    @IBOutlet public weak var button1WC: NSLayoutConstraint!
+    @IBOutlet public weak var button2HC: NSLayoutConstraint!
+    @IBOutlet public weak var button2WC: NSLayoutConstraint!
     
     override public init(frame: CGRect){
         super.init(frame: frame)
