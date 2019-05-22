@@ -16,6 +16,13 @@ public class AdsContent1: UIView {
     @IBOutlet weak var button2: UIButton!
     public var button1OnClick: (() -> Void)?
     public var button2OnClick: (() -> Void)?
+    
+    //Constraints controls
+    @IBOutlet weak var button1HC: NSLayoutConstraint!
+    @IBOutlet weak var button1WC: NSLayoutConstraint!
+    @IBOutlet weak var button2HC: NSLayoutConstraint!
+    @IBOutlet weak var button2WC: NSLayoutConstraint!
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()

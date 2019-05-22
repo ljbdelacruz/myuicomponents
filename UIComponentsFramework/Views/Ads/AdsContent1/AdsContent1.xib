@@ -13,7 +13,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdsContent1" customModule="UIComponentsFramework" customModuleProvider="target">
             <connections>
                 <outlet property="button1" destination="eYa-h9-gJM" id="7wA-qx-7F7"/>
+                <outlet property="button1HC" destination="YTf-uy-YxI" id="KRV-uo-feR"/>
+                <outlet property="button1WC" destination="uKf-RS-a44" id="cnb-yS-yFu"/>
                 <outlet property="button2" destination="qls-4t-ySs" id="tmg-L5-VHj"/>
+                <outlet property="button2HC" destination="1pF-OP-E4o" id="afJ-3Z-7qC"/>
+                <outlet property="button2WC" destination="TIq-lL-MVf" id="nou-Gi-oXb"/>
                 <outlet property="contentview" destination="iN0-l3-epB" id="cA2-5z-SVL"/>
                 <outlet property="myimage" destination="z6T-g6-UCC" id="LiE-y0-LlQ"/>
             </connections>
