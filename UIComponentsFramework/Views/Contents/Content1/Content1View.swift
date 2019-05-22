@@ -46,6 +46,9 @@ extension Content1View{
         myimage.isUserInteractionEnabled=true;
         mylabel.isUserInteractionEnabled=true;
         mycontent.isUserInteractionEnabled=true;
+        myimage.addGestureRecognizer(self.getRecog());
+        mylabel.addGestureRecognizer(self.getRecog());
+        mycontent.addGestureRecognizer(self.getRecog());
         
     }
     @objc
