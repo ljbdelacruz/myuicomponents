@@ -35,6 +35,9 @@
 		04107B352296893C00BE0F51 /* UnderlinedTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04107B342296893C00BE0F51 /* UnderlinedTextFields.swift */; };
 		04107B372296896500BE0F51 /* UnderlinedTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04107B362296896400BE0F51 /* UnderlinedTextFields.xib */; };
 		04107B3922968AA000BE0F51 /* DefaultColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04107B3822968AA000BE0F51 /* DefaultColors.swift */; };
+		04107B3C22968BE200BE0F51 /* ViewMore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04107B3B22968BE200BE0F51 /* ViewMore.xib */; };
+		04107B3E22968C4900BE0F51 /* ViewMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04107B3D22968C4900BE0F51 /* ViewMore.swift */; };
+		04107B4222968E8A00BE0F51 /* AccountCardDesign1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04107B4122968E8A00BE0F51 /* AccountCardDesign1.xib */; };
 		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
@@ -72,6 +75,9 @@
 		04107B342296893C00BE0F51 /* UnderlinedTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextFields.swift; sourceTree = "<group>"; };
 		04107B362296896400BE0F51 /* UnderlinedTextFields.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderlinedTextFields.xib; sourceTree = "<group>"; };
 		04107B3822968AA000BE0F51 /* DefaultColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultColors.swift; sourceTree = "<group>"; };
+		04107B3B22968BE200BE0F51 /* ViewMore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewMore.xib; sourceTree = "<group>"; };
+		04107B3D22968C4900BE0F51 /* ViewMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMore.swift; sourceTree = "<group>"; };
+		04107B4122968E8A00BE0F51 /* AccountCardDesign1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCardDesign1.xib; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +270,31 @@
 			path = UnderlinedTextFields;
 			sourceTree = "<group>";
 		};
+		04107B3A22968BB800BE0F51 /* viewMore */ = {
+			isa = PBXGroup;
+			children = (
+				04107B3B22968BE200BE0F51 /* ViewMore.xib */,
+				04107B3D22968C4900BE0F51 /* ViewMore.swift */,
+			);
+			path = viewMore;
+			sourceTree = "<group>";
+		};
+		04107B3F22968E7200BE0F51 /* AccountCards */ = {
+			isa = PBXGroup;
+			children = (
+				04107B4022968E7A00BE0F51 /* Design1 */,
+			);
+			path = AccountCards;
+			sourceTree = "<group>";
+		};
+		04107B4022968E7A00BE0F51 /* Design1 */ = {
+			isa = PBXGroup;
+			children = (
+				04107B4122968E8A00BE0F51 /* AccountCardDesign1.xib */,
+			);
+			path = Design1;
+			sourceTree = "<group>";
+		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +359,8 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04107B3F22968E7200BE0F51 /* AccountCards */,
+				04107B3A22968BB800BE0F51 /* viewMore */,
 				0410754D2294F1A900BE0F51 /* Ads */,
 				041074FD2293D5E500BE0F51 /* Contents */,
 				041074F62293D00900BE0F51 /* OTP4Digit */,
@@ -427,10 +460,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				041074DF2293A25600BE0F51 /* PopupBasic2.xib in Resources */,
+				04107B3C22968BE200BE0F51 /* ViewMore.xib in Resources */,
 				04107B372296896500BE0F51 /* UnderlinedTextFields.xib in Resources */,
 				EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */,
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
+				04107B4222968E8A00BE0F51 /* AccountCardDesign1.xib in Resources */,
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
@@ -489,6 +524,7 @@
 				041075022293D6EF00BE0F51 /* Content1View.swift in Sources */,
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
+				04107B3E22968C4900BE0F51 /* ViewMore.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
