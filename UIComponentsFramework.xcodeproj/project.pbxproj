@@ -101,7 +101,7 @@
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
 		EE3EBA3A229419E50073F3AF /* Content3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content3View.xib; sourceTree = "<group>"; };
 		EE3EBA3C22941A500073F3AF /* Content3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content3View.swift; sourceTree = "<group>"; };
-		EE3EBA792296D54B0073F3AF /* release.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = release.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3EBA792296D54B0073F3AF /* MyUICF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyUICF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3EBA7A2296D54B0073F3AF /* UIComponentsFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UIComponentsFramework copy-Info.plist"; path = "/Users/laineljohndelacruz/Desktop/GithubRepo/personal/UIComponentsFramework/UIComponentsFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
@@ -328,7 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */,
-				EE3EBA792296D54B0073F3AF /* release.framework */,
+				EE3EBA792296D54B0073F3AF /* MyUICF.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,9 +402,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EE3EBA512296D54B0073F3AF /* release */ = {
+		EE3EBA512296D54B0073F3AF /* MyUICF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "release" */;
+			buildConfigurationList = EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "MyUICF" */;
 			buildPhases = (
 				EE3EBA522296D54B0073F3AF /* [CP] Check Pods Manifest.lock */,
 				EE3EBA532296D54B0073F3AF /* Headers */,
@@ -416,9 +416,9 @@
 			);
 			dependencies = (
 			);
-			name = release;
+			name = MyUICF;
 			productName = UIComponentsFramework;
-			productReference = EE3EBA792296D54B0073F3AF /* release.framework */;
+			productReference = EE3EBA792296D54B0073F3AF /* MyUICF.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EEB7A1FA2290E30600A0C3F2 /* UIComponentsFramework */ = {
@@ -468,7 +468,7 @@
 			projectRoot = "";
 			targets = (
 				EEB7A1FA2290E30600A0C3F2 /* UIComponentsFramework */,
-				EE3EBA512296D54B0073F3AF /* release */,
+				EE3EBA512296D54B0073F3AF /* MyUICF */,
 			);
 		};
 /* End PBXProject section */
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "release" */ = {
+		EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "MyUICF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE3EBA772296D54B0073F3AF /* Debug */,

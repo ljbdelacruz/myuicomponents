@@ -1,0 +1,4 @@
+framework module MyUICF {
+  header "MyUICF-Swift.h"
+  requires objc
+}
