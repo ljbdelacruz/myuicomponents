@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension UITextView{
     //this automatically adjust textview height based on its content
