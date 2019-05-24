@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UITextView{
+public extension UITextView{
     //this automatically adjust textview height based on its content
-    func adjustTextView(){
+    public func adjustTextView(){
         let fixedWidth = self.frame.size.width
         let newSize = self.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
         self.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
