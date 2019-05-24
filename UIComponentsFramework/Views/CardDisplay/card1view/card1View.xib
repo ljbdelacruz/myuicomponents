@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="card1View" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="cardImage" destination="o6Y-Td-JBn" id="URS-TM-Bi9"/>
+                <outlet property="cardName" destination="03b-9T-08h" id="7zw-nn-IFx"/>
+                <outlet property="cardNumber" destination="7SB-5N-xVV" id="ElW-d9-tTz"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="5Jc-Hh-am3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samplecard" translatesAutoresizingMaskIntoConstraints="NO" id="o6Y-Td-JBn">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5ms-nJ-Pxd"/>
+                        <constraint firstAttribute="height" constant="53" id="BJC-d6-ZRE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03b-9T-08h">
+                    <rect key="frame" x="108" y="7" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KZY-55-vt1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXX-XXXX-XXXX-0503" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SB-5N-xVV">
+                    <rect key="frame" x="108" y="27" width="192" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="03b-9T-08h" secondAttribute="trailing" constant="8" id="8AJ-sG-DZ5"/>
+                <constraint firstItem="03b-9T-08h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="M7y-yI-exs"/>
+                <constraint firstItem="03b-9T-08h" firstAttribute="leading" secondItem="o6Y-Td-JBn" secondAttribute="trailing" constant="8" id="Oqn-kM-npq"/>
+                <constraint firstItem="o6Y-Td-JBn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="PIW-XE-zcS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7SB-5N-xVV" secondAttribute="trailing" constant="8" id="QOF-A9-03e"/>
+                <constraint firstItem="o6Y-Td-JBn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VUs-YW-7rU"/>
+                <constraint firstItem="o6Y-Td-JBn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WqK-ei-fwI"/>
+                <constraint firstItem="7SB-5N-xVV" firstAttribute="top" secondItem="03b-9T-08h" secondAttribute="bottom" id="lOF-oX-5mU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7SB-5N-xVV" secondAttribute="bottom" constant="5" id="pfR-9c-jHk"/>
+                <constraint firstItem="7SB-5N-xVV" firstAttribute="leading" secondItem="o6Y-Td-JBn" secondAttribute="trailing" constant="8" id="wOp-dR-eYf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="91.200000000000003" y="402.54872563718146"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="samplecard" width="693" height="433"/>
+    </resources>
+</document>
