@@ -12,7 +12,11 @@ public class ViewButtonMenu1: UIView {
     @IBOutlet public var containerview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var myDesc: UITextView!
-    public var eventOnClick: (() -> Void)?
+    public var eventOnClick: (() -> Void)? {
+        didSet{
+            self.setupGestures();
+        }
+    }
     
     public var titleDesc:String {
         didSet{
@@ -43,7 +47,7 @@ extension ViewButtonMenu1{
         let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
         return recog;
     }
-    public func setupGestures(){
+    func setupGestures(){
         self.containerview.addGestureRecognizer(self.getRecog());
     }
     @objc func onClick(){
