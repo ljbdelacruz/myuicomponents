@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE3EBA512296D54B0073F3AF"
-               BuildableName = "MyUICF.framework"
-               BlueprintName = "MyUICF"
+               BuildableName = "UIComponentsFramework-1.framework"
+               BlueprintName = "UIComponentsFramework-1"
                ReferencedContainer = "container:UIComponentsFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE3EBA512296D54B0073F3AF"
-            BuildableName = "MyUICF.framework"
-            BlueprintName = "MyUICF"
+            BuildableName = "UIComponentsFramework-1.framework"
+            BlueprintName = "UIComponentsFramework-1"
             ReferencedContainer = "container:UIComponentsFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE3EBA512296D54B0073F3AF"
-            BuildableName = "MyUICF.framework"
-            BlueprintName = "MyUICF"
+            BuildableName = "UIComponentsFramework-1.framework"
+            BlueprintName = "UIComponentsFramework-1"
             ReferencedContainer = "container:UIComponentsFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

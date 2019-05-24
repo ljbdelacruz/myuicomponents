@@ -35,7 +35,6 @@
 		0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472FDF52297B93A00C72FDF /* ViewButtonMenu1.xib */; };
 		0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */; };
 		0472FDFE2297C3C000C72FDF /* ViewButtonMenu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */; };
-		E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBA542296D54B0073F3AF /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,7 +105,7 @@
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
 		EE3EBA3A229419E50073F3AF /* Content3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content3View.xib; sourceTree = "<group>"; };
 		EE3EBA3C22941A500073F3AF /* Content3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content3View.swift; sourceTree = "<group>"; };
-		EE3EBA792296D54B0073F3AF /* MyUICF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyUICF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3EBA792296D54B0073F3AF /* UIComponentsFramework-1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UIComponentsFramework-1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3EBA7A2296D54B0073F3AF /* UIComponentsFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UIComponentsFramework copy-Info.plist"; path = "/Users/laineljohndelacruz/Desktop/GithubRepo/personal/UIComponentsFramework/UIComponentsFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27675C19BA066483FEEFC1B /* Pods_UIComponentsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */,
-				EE3EBA792296D54B0073F3AF /* MyUICF.framework */,
+				EE3EBA792296D54B0073F3AF /* UIComponentsFramework-1.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -425,9 +423,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EE3EBA512296D54B0073F3AF /* MyUICF */ = {
+		EE3EBA512296D54B0073F3AF /* UIComponentsFramework-1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "MyUICF" */;
+			buildConfigurationList = EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "UIComponentsFramework-1" */;
 			buildPhases = (
 				EE3EBA522296D54B0073F3AF /* [CP] Check Pods Manifest.lock */,
 				EE3EBA532296D54B0073F3AF /* Headers */,
@@ -439,9 +437,9 @@
 			);
 			dependencies = (
 			);
-			name = MyUICF;
+			name = "UIComponentsFramework-1";
 			productName = UIComponentsFramework;
-			productReference = EE3EBA792296D54B0073F3AF /* MyUICF.framework */;
+			productReference = EE3EBA792296D54B0073F3AF /* UIComponentsFramework-1.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EEB7A1FA2290E30600A0C3F2 /* UIComponentsFramework */ = {
@@ -491,7 +489,7 @@
 			projectRoot = "";
 			targets = (
 				EEB7A1FA2290E30600A0C3F2 /* UIComponentsFramework */,
-				EE3EBA512296D54B0073F3AF /* MyUICF */,
+				EE3EBA512296D54B0073F3AF /* UIComponentsFramework-1 */,
 			);
 		};
 /* End PBXProject section */
@@ -898,7 +896,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "MyUICF" */ = {
+		EE3EBA762296D54B0073F3AF /* Build configuration list for PBXNativeTarget "UIComponentsFramework-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE3EBA772296D54B0073F3AF /* Debug */,
