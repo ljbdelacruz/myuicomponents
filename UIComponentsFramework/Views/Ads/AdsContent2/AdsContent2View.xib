@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdsContent2View" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentview" destination="iN0-l3-epB" id="MfP-m1-Lav"/>
+                <outlet property="myTitle" destination="nft-5U-Cqs" id="ySP-vd-ace"/>
+                <outlet property="myimage" destination="uIY-C5-ckD" id="OXq-hb-mV0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uIY-C5-ckD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="6XN-Gc-P0h"/>
+                        <constraint firstAttribute="height" constant="198" id="g7V-mS-Z0j"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nft-5U-Cqs">
+                    <rect key="frame" x="10" y="213" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uIY-C5-ckD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9Ox-5q-qwO"/>
+                <constraint firstItem="uIY-C5-ckD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KDT-fo-viQ"/>
+                <constraint firstItem="uIY-C5-ckD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sl9-tT-DKS"/>
+                <constraint firstItem="nft-5U-Cqs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Wrb-p7-vSt"/>
+                <constraint firstItem="nft-5U-Cqs" firstAttribute="top" secondItem="uIY-C5-ckD" secondAttribute="bottom" constant="15" id="YKf-t4-4Gb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nft-5U-Cqs" secondAttribute="trailing" constant="10" id="hZj-fT-aed"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="236.13193403298354"/>
+        </view>
+    </objects>
+</document>

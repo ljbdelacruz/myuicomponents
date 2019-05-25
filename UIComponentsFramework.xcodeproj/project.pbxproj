@@ -38,6 +38,8 @@
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
 		EE3EBABE229843050073F3AF /* card1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBABD229843050073F3AF /* card1View.swift */; };
+		EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBAC02298E6D60073F3AF /* AdsContent2View.xib */; };
+		EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBAC22298E6E60073F3AF /* AdsContent2View.swift */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
 		EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB7A20A2290E36600A0C3F2 /* view1.xib */; };
@@ -79,6 +81,8 @@
 		EE3EBA7A2296D54B0073F3AF /* UIComponentsFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UIComponentsFramework copy-Info.plist"; path = "/Users/laineljohndelacruz/Desktop/GithubRepo/personal/UIComponentsFramework/UIComponentsFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		EE3EBABB22983B490073F3AF /* card1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = card1View.xib; sourceTree = "<group>"; };
 		EE3EBABD229843050073F3AF /* card1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card1View.swift; sourceTree = "<group>"; };
+		EE3EBAC02298E6D60073F3AF /* AdsContent2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsContent2View.xib; sourceTree = "<group>"; };
+		EE3EBAC22298E6E60073F3AF /* AdsContent2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsContent2View.swift; sourceTree = "<group>"; };
 		EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
 		EEB7A1FF2290E30600A0C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		0410754D2294F1A900BE0F51 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				EE3EBABF2298E6B30073F3AF /* AdsContent2 */,
 				0410754E2294F1B000BE0F51 /* AdsContent1 */,
 			);
 			path = Ads;
@@ -312,6 +317,15 @@
 				EE3EBABD229843050073F3AF /* card1View.swift */,
 			);
 			path = card1view;
+			sourceTree = "<group>";
+		};
+		EE3EBABF2298E6B30073F3AF /* AdsContent2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBAC02298E6D60073F3AF /* AdsContent2View.xib */,
+				EE3EBAC22298E6E60073F3AF /* AdsContent2View.swift */,
+			);
+			path = AdsContent2;
 			sourceTree = "<group>";
 		};
 		EEB7A1F12290E30600A0C3F2 = {
@@ -459,6 +473,7 @@
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
+				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
@@ -506,6 +521,7 @@
 				041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */,
 				041074F12293CA2000BE0F51 /* BackgroundView.swift in Sources */,
 				041074E12293A27E00BE0F51 /* PopupBasic2.swift in Sources */,
+				EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
 				0410754C2294F06500BE0F51 /* UITextView+.swift in Sources */,
