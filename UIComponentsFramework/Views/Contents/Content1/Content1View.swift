@@ -14,7 +14,11 @@ public class Content1View: UIView {
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mylabel: UILabel!
     @IBOutlet public weak var mycontent: UILabel!
-    public var eventOnClick: (() -> Void)?
+    public var eventOnClick: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
     
     
     override public init(frame: CGRect){
@@ -43,13 +47,7 @@ extension Content1View{
         return recog;
     }
     public func setupTapRecognizer(){
-        myimage.isUserInteractionEnabled=true;
-        mylabel.isUserInteractionEnabled=true;
-        mycontent.isUserInteractionEnabled=true;
-        myimage.addGestureRecognizer(self.getRecog());
-        mylabel.addGestureRecognizer(self.getRecog());
-        mycontent.addGestureRecognizer(self.getRecog());
-        
+        contentview.addGestureRecognizer(self.getRecog());
     }
     @objc
     func onClick(){

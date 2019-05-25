@@ -48,7 +48,6 @@ extension card1View{
     }
     public func setupTapRecognizer(){
         containerView.addGestureRecognizer(self.getRecog());
-        
     }
     @objc
     func onClick(){
