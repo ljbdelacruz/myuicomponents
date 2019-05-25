@@ -13,6 +13,11 @@ public class Content3View: UIView {
     @IBOutlet public var contentview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mycontent: UILabel!
+    public var eventOnClick: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -25,5 +30,20 @@ public class Content3View: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
         self.mycontent.text="";
+    }
+}
+
+//MARK: setup tap recognizer
+extension Content1View{
+    public func getRecog()->UITapGestureRecognizer{
+        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
+        return recog;
+    }
+    public func setupTapRecognizer(){
+        contentview.addGestureRecognizer(self.getRecog());
+    }
+    @objc
+    func onClick(){
+        eventOnClick?();
     }
 }

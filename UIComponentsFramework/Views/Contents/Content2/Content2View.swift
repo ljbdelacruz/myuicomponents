@@ -13,6 +13,13 @@ public class Content2View: UIView {
     @IBOutlet public var contentview: UIView!
     @IBOutlet public weak var mytitle: UILabel!
     @IBOutlet public weak var mycontent: UITextView!
+    public var eventOnClick: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
+    
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -28,4 +35,18 @@ public class Content2View: UIView {
         contentview.fixInView(self)
     }
     
+}
+//MARK: setup recognizer
+extension Content1View{
+    public func getRecog()->UITapGestureRecognizer{
+        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
+        return recog;
+    }
+    public func setupTapRecognizer(){
+        contentview.addGestureRecognizer(self.getRecog());
+    }
+    @objc
+    func onClick(){
+        eventOnClick?();
+    }
 }
