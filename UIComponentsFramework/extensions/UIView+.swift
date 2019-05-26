@@ -28,3 +28,17 @@ extension UIView
         self.clipsToBounds = true
     }
 }
+
+
+//MARK: Animations
+extension UIView{
+    //animate from up down
+    public func animPushUp(animDur:TimeInterval){
+        self.frame.origin.y = self.frame.origin.y - 200;
+        self.alpha=0;
+        UIView.animate(withDuration: animDur, animations: {
+            self.alpha=1;
+            self.frame.origin.y = self.frame.origin.y + 200;
+        })
+    }
+}
