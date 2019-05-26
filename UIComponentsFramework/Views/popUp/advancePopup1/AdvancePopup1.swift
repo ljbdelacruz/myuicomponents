@@ -15,6 +15,8 @@ public class AdvancePopup1: UIView {
     @IBOutlet public weak var mytitle: UILabel!
     @IBOutlet public weak var mytableview: UITableView!
     @IBOutlet public weak var mybutton: UIButton!
+    public var content:[AdvancePopupViewModel]=[];
+    
     public var eventOnClick: (() -> Void)?{
         didSet{
             self.setupTapRecognizer();
@@ -49,3 +51,16 @@ extension AdvancePopup1{
         eventOnClick?();
     }
 }
+
+//MARK:setup the uitable contents
+extension AdvancePopup1:UITableViewDelegate, UITableViewDataSource{
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.content.count;
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell=self.mytableview.dequeueReusableCell(withIdentifier: "") as! UITableViewCell;
+        return cell;
+    }
+}
+
