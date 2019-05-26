@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="basic1TableViewCell" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="myDesc" destination="DPR-uZ-ZPE" id="dGy-WL-Mhj"/>
+                <outlet property="mytitle" destination="f54-SH-SAy" id="y5q-Vb-lZY"/>
+                <outlet property="mytvcell" destination="3TV-OW-52z" id="65E-iV-knN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell1" rowHeight="136" id="3TV-OW-52z">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3TV-OW-52z" id="cWF-3f-gxV">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f54-SH-SAy">
+                        <rect key="frame" x="16" y="11" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DPR-uZ-ZPE">
+                        <rect key="frame" x="16" y="32" width="343" height="91"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DPR-uZ-ZPE" firstAttribute="top" secondItem="f54-SH-SAy" secondAttribute="bottom" id="0yh-ct-w69"/>
+                    <constraint firstItem="DPR-uZ-ZPE" firstAttribute="leading" secondItem="cWF-3f-gxV" secondAttribute="leadingMargin" id="8Pp-Q1-PeY"/>
+                    <constraint firstItem="DPR-uZ-ZPE" firstAttribute="trailing" secondItem="cWF-3f-gxV" secondAttribute="trailingMargin" id="GBK-cB-uN7"/>
+                    <constraint firstItem="f54-SH-SAy" firstAttribute="leading" secondItem="cWF-3f-gxV" secondAttribute="leadingMargin" id="Opx-U3-8sK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="f54-SH-SAy" secondAttribute="trailing" id="SWj-bs-QQO"/>
+                    <constraint firstItem="f54-SH-SAy" firstAttribute="top" secondItem="cWF-3f-gxV" secondAttribute="topMargin" id="d7O-T5-JL6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DPR-uZ-ZPE" secondAttribute="bottom" constant="2" id="fgA-vd-F7x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="109.59999999999999" y="149.32533733133434"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -45,6 +45,10 @@
 		EE3EBACD229A34E90073F3AF /* AdvancePopup1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBACC229A34E90073F3AF /* AdvancePopup1.xib */; };
 		EE3EBACF229A34FC0073F3AF /* AdvancePopup1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBACE229A34FC0073F3AF /* AdvancePopup1.swift */; };
 		EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBAD0229A86670073F3AF /* AdvancePopupViewModel.swift */; };
+		EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBAD4229A8BEF0073F3AF /* basicCell1.xib */; };
+		EE3EBAD7229A8C860073F3AF /* basic1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBAD6229A8C860073F3AF /* basic1TableViewCell.swift */; };
+		EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBAD9229A8DBD0073F3AF /* basicCell2.xib */; };
+		EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBADB229A8E500073F3AF /* basic2TableViewCell.swift */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
 		EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB7A20A2290E36600A0C3F2 /* view1.xib */; };
@@ -93,6 +97,10 @@
 		EE3EBACC229A34E90073F3AF /* AdvancePopup1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancePopup1.xib; sourceTree = "<group>"; };
 		EE3EBACE229A34FC0073F3AF /* AdvancePopup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancePopup1.swift; sourceTree = "<group>"; };
 		EE3EBAD0229A86670073F3AF /* AdvancePopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancePopupViewModel.swift; sourceTree = "<group>"; };
+		EE3EBAD4229A8BEF0073F3AF /* basicCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell1.xib; sourceTree = "<group>"; };
+		EE3EBAD6229A8C860073F3AF /* basic1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic1TableViewCell.swift; sourceTree = "<group>"; };
+		EE3EBAD9229A8DBD0073F3AF /* basicCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell2.xib; sourceTree = "<group>"; };
+		EE3EBADB229A8E500073F3AF /* basic2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic2TableViewCell.swift; sourceTree = "<group>"; };
 		EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
 		EEB7A1FF2290E30600A0C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -359,6 +367,33 @@
 			path = advancePopup1;
 			sourceTree = "<group>";
 		};
+		EE3EBAD2229A8A410073F3AF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBAD8229A8DA90073F3AF /* basicCell2 */,
+				EE3EBAD3229A8A4D0073F3AF /* basicCell1 */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EE3EBAD3229A8A4D0073F3AF /* basicCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBAD4229A8BEF0073F3AF /* basicCell1.xib */,
+				EE3EBAD6229A8C860073F3AF /* basic1TableViewCell.swift */,
+			);
+			path = basicCell1;
+			sourceTree = "<group>";
+		};
+		EE3EBAD8229A8DA90073F3AF /* basicCell2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBAD9229A8DBD0073F3AF /* basicCell2.xib */,
+				EE3EBADB229A8E500073F3AF /* basic2TableViewCell.swift */,
+			);
+			path = basicCell2;
+			sourceTree = "<group>";
+		};
 		EEB7A1F12290E30600A0C3F2 = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +417,7 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EE3EBAD2229A8A410073F3AF /* TableViewCell */,
 				041074ED2293C78D00BE0F51 /* ImageView */,
 				041074EA2293B51800BE0F51 /* SupportFiles */,
 				041074E22293B37700BE0F51 /* TextFields */,
@@ -506,12 +542,14 @@
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
+				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
 				041075002293D65500BE0F51 /* Content1View.xib in Resources */,
+				EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				EE3EBABC22983B490073F3AF /* card1View.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
@@ -560,6 +598,7 @@
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
 				0410754C2294F06500BE0F51 /* UITextView+.swift in Sources */,
 				EE3EBACF229A34FC0073F3AF /* AdvancePopup1.swift in Sources */,
+				EE3EBAD7229A8C860073F3AF /* basic1TableViewCell.swift in Sources */,
 				041075072293D8EB00BE0F51 /* Content2View.swift in Sources */,
 				041074D4229390C900BE0F51 /* UIView+.swift in Sources */,
 				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
@@ -568,6 +607,7 @@
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
 				0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */,
 				EE3EBABE229843050073F3AF /* card1View.swift in Sources */,
+				EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
