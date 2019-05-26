@@ -33,9 +33,9 @@ public class card1View: UIView {
     }
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
-        contentview.fixInView(self)
-        self.mylabel.text="";
-        self.mycontent.text="";
+        containerView.fixInView(self)
+        self.cardName.text="";
+        self.cardNumber.text="";
     }
     
     

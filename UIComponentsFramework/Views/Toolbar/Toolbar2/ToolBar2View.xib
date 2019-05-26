@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Toolbar2View" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="bPM-th-ki8" id="mFo-IX-gbc"/>
+                <outlet property="leftButton" destination="atN-qz-fuw" id="Ckt-4p-xjG"/>
+                <outlet property="rightButton1" destination="MVd-Pf-X3E" id="1xG-pm-ePP"/>
+                <outlet property="rightButton2" destination="WGo-kL-WCP" id="iSa-4k-PZz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bPM-th-ki8">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atN-qz-fuw">
+                    <rect key="frame" x="0.0" y="20" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="V1S-LX-ANZ"/>
+                    </constraints>
+                    <state key="normal" image="ic_back_arrow_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-Pf-X3E">
+                    <rect key="frame" x="327" y="20" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Sy9-Pi-d8l"/>
+                    </constraints>
+                    <state key="normal" image="ic_notifications_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGo-kL-WCP">
+                    <rect key="frame" x="279" y="20" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="9IF-1z-Fbi"/>
+                    </constraints>
+                    <state key="normal" image="ic_notifications_white"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="S7Z-1H-EZK" firstAttribute="bottom" secondItem="atN-qz-fuw" secondAttribute="bottom" constant="25" id="42m-SE-7Dk"/>
+                <constraint firstItem="MVd-Pf-X3E" firstAttribute="top" secondItem="S7Z-1H-EZK" secondAttribute="top" constant="20" id="A0Q-w3-4YN"/>
+                <constraint firstItem="MVd-Pf-X3E" firstAttribute="leading" secondItem="WGo-kL-WCP" secondAttribute="trailing" id="Wo6-ax-zPK"/>
+                <constraint firstItem="WGo-kL-WCP" firstAttribute="top" secondItem="S7Z-1H-EZK" secondAttribute="top" constant="20" id="YXt-xA-I6h"/>
+                <constraint firstItem="S7Z-1H-EZK" firstAttribute="bottom" secondItem="MVd-Pf-X3E" secondAttribute="bottom" constant="25" id="YgT-4R-kCg"/>
+                <constraint firstItem="atN-qz-fuw" firstAttribute="top" secondItem="S7Z-1H-EZK" secondAttribute="top" constant="20" id="gbc-Ir-FQW"/>
+                <constraint firstItem="MVd-Pf-X3E" firstAttribute="trailing" secondItem="S7Z-1H-EZK" secondAttribute="trailing" id="sbn-19-DvH"/>
+                <constraint firstItem="atN-qz-fuw" firstAttribute="leading" secondItem="S7Z-1H-EZK" secondAttribute="leading" id="wny-VK-Fi1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="S7Z-1H-EZK"/>
+            <point key="canvasLocation" x="53.600000000000001" y="320.68965517241384"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_arrow_white" width="48" height="48"/>
+        <image name="ic_notifications_white" width="48" height="48"/>
+    </resources>
+</document>

@@ -36,7 +36,7 @@ public class AdsContent2View: UIView {
 //MARK: Recognizer
 extension AdsContent2View{
     public func getRecog(type:Int)->UITapGestureRecognizer{
-        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
+        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick1))
         return recog;
     }
     public func setupTapRecognizer(){

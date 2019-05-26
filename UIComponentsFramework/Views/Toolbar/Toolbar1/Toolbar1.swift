@@ -12,8 +12,17 @@ public class Toolbar1: UIView {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var centerImage: UIImageView!
     @IBOutlet weak var rightButton: UIButton!
-    public var leftActionButton: (() -> Void)?
-    public var rightActionButton: (() -> Void)?
+    private var isRecogSet=false;
+    public var leftActionButton: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
+    public var rightActionButton: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,5 +42,36 @@ public class Toolbar1: UIView {
     }
     @IBAction func leftButtonOnClick(_ sender: Any) {
         leftActionButton?();
+    }
+}
+
+//MARK: recognizer
+extension Toolbar1{
+    public func getRecog(type:Int)->UITapGestureRecognizer{
+        switch type{
+        case 1:
+            let recog = UITapGestureRecognizer(target: self, action: #selector(rightOnClick))
+            return recog;
+        default:
+            let recog = UITapGestureRecognizer(target: self, action: #selector(leftOnClick))
+            return recog;
+        }
+    }
+    public func setupTapRecognizer(){
+        if !self.isRecogSet{
+            if !self.isRecogSet{
+                leftButton.addGestureRecognizer(self.getRecog(type:1));
+                rightButton.addGestureRecognizer(self.getRecog(type: 2))
+            }
+        }
+        self.isRecogSet=true;
+    }
+    @objc
+    func leftOnClick(){
+        leftActionButton?();
+    }
+    @objc
+    func rightOnClick(){
+        
     }
 }

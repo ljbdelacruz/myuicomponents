@@ -34,7 +34,7 @@ public class Content3View: UIView {
 }
 
 //MARK: setup tap recognizer
-extension Content1View{
+extension Content3View{
     public func getRecog()->UITapGestureRecognizer{
         let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
         return recog;

@@ -37,7 +37,7 @@ public class Content2View: UIView {
     
 }
 //MARK: setup recognizer
-extension Content1View{
+extension Content2View{
     public func getRecog()->UITapGestureRecognizer{
         let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
         return recog;
