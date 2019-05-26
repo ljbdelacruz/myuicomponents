@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvancePopup1" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerview" destination="hpF-Uh-UA4" id="liO-MZ-GGl"/>
+                <outlet property="contentview" destination="iN0-l3-epB" id="zpP-4B-9j8"/>
+                <outlet property="mybutton" destination="BEU-BG-e23" id="T1J-Xs-8d2"/>
+                <outlet property="mytableview" destination="oNC-hg-Pcw" id="2LG-ab-XXd"/>
+                <outlet property="mytitle" destination="Q1p-Ie-VIQ" id="7hK-TH-Is7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="405"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpF-Uh-UA4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1p-Ie-VIQ">
+                            <rect key="frame" x="8" y="27" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="359" id="1xQ-It-AXE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Q1p-Ie-VIQ" firstAttribute="leading" secondItem="hpF-Uh-UA4" secondAttribute="leading" constant="8" id="K1o-ri-Y2q"/>
+                        <constraint firstItem="Q1p-Ie-VIQ" firstAttribute="top" secondItem="hpF-Uh-UA4" secondAttribute="top" constant="27" id="NCk-Ig-bRq"/>
+                        <constraint firstAttribute="height" constant="74" id="RZG-s9-h01"/>
+                        <constraint firstAttribute="trailing" secondItem="Q1p-Ie-VIQ" secondAttribute="trailing" constant="8" id="kq3-nC-Yay"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-hg-Pcw">
+                    <rect key="frame" x="0.0" y="74" width="375" height="281"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEU-BG-e23">
+                    <rect key="frame" x="0.0" y="355" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gwU-Ee-3wy"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BEU-BG-e23" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4c3-uA-kYC"/>
+                <constraint firstItem="hpF-Uh-UA4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6TS-eB-2GC"/>
+                <constraint firstItem="hpF-Uh-UA4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cet-GY-xVw"/>
+                <constraint firstItem="hpF-Uh-UA4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Q5Y-c0-Pac"/>
+                <constraint firstItem="BEU-BG-e23" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dXv-dy-ulI"/>
+                <constraint firstItem="oNC-hg-Pcw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fUx-a6-71E"/>
+                <constraint firstItem="BEU-BG-e23" firstAttribute="top" secondItem="oNC-hg-Pcw" secondAttribute="bottom" id="nJR-uW-tYB"/>
+                <constraint firstItem="oNC-hg-Pcw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qvj-Le-w20"/>
+                <constraint firstItem="BEU-BG-e23" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="t2r-zL-yJp"/>
+                <constraint firstItem="oNC-hg-Pcw" firstAttribute="top" secondItem="hpF-Uh-UA4" secondAttribute="bottom" id="w6H-ms-rfj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="63.200000000000003" y="165.06746626686657"/>
+        </view>
+    </objects>
+</document>
