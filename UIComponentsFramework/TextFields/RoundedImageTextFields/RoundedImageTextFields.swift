@@ -9,7 +9,6 @@
 import UIKit
 
 public class RoundedImageTextFields: UIView {
-    
     public let xibname:String="RoundedImageTextFields";
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var myimage: UIImageView!
@@ -26,12 +25,15 @@ public class RoundedImageTextFields: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
+        self.setDefault();
     }
     public func setDefault(){
-        contentview.setupRadius(bgColor: UIColor.gray, radius: 15);
-        mytextfield.backgroundColor=UIColor.gray;
+        contentview.setupRadius(bgColor: UIColor.white, radius: 18);
+        contentview.setMyShadow();
+        mytextfield.backgroundColor=UIColor.white;
+        mytextfield.textColor=UiUtil.hexStringToUIColor(hex: "B9B9B9");
         mytextfield.layer.borderWidth=0;
         mytextfield.layer.borderColor=UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.0).cgColor;
-        mytextfield.changePlaceholderColor(color: UIColor.blue);
+        mytextfield.changePlaceholderColor(color: UiUtil.hexStringToUIColor(hex: "B9B9B9"));
     }
 }

@@ -41,4 +41,13 @@ extension UIView{
             self.frame.origin.y = self.frame.origin.y + 200;
         })
     }
+    
+    
+    public func setMyShadow(){
+        self.layer.masksToBounds = false
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0);
+        self.layer.shadowOpacity = 1.0
+    }
 }
