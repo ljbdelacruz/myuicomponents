@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundedImageTextFields" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentview" destination="5QH-c4-sIP" id="Tq5-E5-P5C"/>
+                <outlet property="myimage" destination="PKM-p7-oep" id="meS-gL-4FI"/>
+                <outlet property="mytextfield" destination="zu8-pC-qjb" id="emN-rH-HzG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5QH-c4-sIP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="PKM-p7-oep">
+                    <rect key="frame" x="20" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="rvM-rf-7PU"/>
+                        <constraint firstAttribute="width" constant="20" id="ytd-QL-VwB"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zu8-pC-qjb">
+                    <rect key="frame" x="45" y="5" width="310" height="17"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zu8-pC-qjb" firstAttribute="top" secondItem="5QH-c4-sIP" secondAttribute="top" constant="5" id="Rpl-zf-igr"/>
+                <constraint firstItem="PKM-p7-oep" firstAttribute="top" secondItem="5QH-c4-sIP" secondAttribute="top" constant="10" id="lia-4a-iUd"/>
+                <constraint firstAttribute="bottom" secondItem="zu8-pC-qjb" secondAttribute="bottom" constant="5" id="o30-ff-McX"/>
+                <constraint firstAttribute="trailing" secondItem="zu8-pC-qjb" secondAttribute="trailing" constant="20" id="rLT-4K-YaN"/>
+                <constraint firstItem="zu8-pC-qjb" firstAttribute="leading" secondItem="PKM-p7-oep" secondAttribute="trailing" constant="5" id="sct-J5-lfV"/>
+                <constraint firstItem="PKM-p7-oep" firstAttribute="leading" secondItem="5QH-c4-sIP" secondAttribute="leading" constant="20" id="tYq-52-xHC"/>
+                <constraint firstAttribute="bottom" secondItem="PKM-p7-oep" secondAttribute="bottom" constant="10" id="ve8-2t-H4Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="H2y-on-jAt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-128.63568215892056"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
+</document>
