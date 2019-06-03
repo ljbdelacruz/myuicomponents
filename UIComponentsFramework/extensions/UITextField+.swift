@@ -11,7 +11,12 @@ import UIKit
 
 
 extension UITextField{
-    func clear() {
+    public func clear() {
         self.text = ""
     }
+    public func changePlaceholderColor(color:UIColor){
+        self.attributedPlaceholder = NSAttributedString(string: self.placeholder!,
+                                                        attributes: [NSAttributedString.Key.foregroundColor: color])
+    }
+
 }

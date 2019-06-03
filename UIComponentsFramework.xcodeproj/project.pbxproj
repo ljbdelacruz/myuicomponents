@@ -34,6 +34,8 @@
 		041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041075512294F2F000BE0F51 /* AdsContent1.swift */; };
 		0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472FDF52297B93A00C72FDF /* ViewButtonMenu1.xib */; };
 		0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */; };
+		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
+		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
@@ -86,6 +88,8 @@
 		041075512294F2F000BE0F51 /* AdsContent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsContent1.swift; sourceTree = "<group>"; };
 		0472FDF52297B93A00C72FDF /* ViewButtonMenu1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewButtonMenu1.xib; sourceTree = "<group>"; };
 		0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtonMenu1.swift; sourceTree = "<group>"; };
+		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
+		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 		041074E22293B37700BE0F51 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				04DC39E5229BE27A0004D473 /* RoundedImageTextFields */,
 				041074E32293B38400BE0F51 /* AutoTextFields */,
 			);
 			path = TextFields;
@@ -304,6 +309,15 @@
 				0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */,
 			);
 			path = ViewButtonMenu1;
+			sourceTree = "<group>";
+		};
+		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */,
+				04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */,
+			);
+			path = RoundedImageTextFields;
 			sourceTree = "<group>";
 		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
@@ -568,6 +582,7 @@
 				041074DF2293A25600BE0F51 /* PopupBasic2.xib in Resources */,
 				EE3EBAC6229939CB0073F3AF /* ToolBar2View.xib in Resources */,
 				0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */,
+				04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */,
 				EE3EBACD229A34E90073F3AF /* AdvancePopup1.xib in Resources */,
 				EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */,
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
@@ -649,6 +664,7 @@
 				EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
 				EE3EBAC8229A1DB00073F3AF /* Toolbar2View.swift in Sources */,
+				04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */,
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
 				0410754C2294F06500BE0F51 /* UITextView+.swift in Sources */,
 				EE3EBAE222A004E20073F3AF /* GMaps1View.swift in Sources */,
