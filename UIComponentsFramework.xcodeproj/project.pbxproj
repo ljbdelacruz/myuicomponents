@@ -49,6 +49,10 @@
 		EE3EBAD7229A8C860073F3AF /* basic1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBAD6229A8C860073F3AF /* basic1TableViewCell.swift */; };
 		EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBAD9229A8DBD0073F3AF /* basicCell2.xib */; };
 		EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBADB229A8E500073F3AF /* basic2TableViewCell.swift */; };
+		EE3EBAE022A004A70073F3AF /* Gmaps1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBADF22A004A70073F3AF /* Gmaps1View.xib */; };
+		EE3EBAE222A004E20073F3AF /* GMaps1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBAE122A004E20073F3AF /* GMaps1View.swift */; };
+		EE3EBB0B22A20C890073F3AF /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3EBB0A22A20C890073F3AF /* GoogleMaps.framework */; };
+		EE3EBB0D22A20C930073F3AF /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3EBB0C22A20C920073F3AF /* GoogleMapsCore.framework */; };
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
 		EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB7A20A2290E36600A0C3F2 /* view1.xib */; };
@@ -101,6 +105,10 @@
 		EE3EBAD6229A8C860073F3AF /* basic1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic1TableViewCell.swift; sourceTree = "<group>"; };
 		EE3EBAD9229A8DBD0073F3AF /* basicCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell2.xib; sourceTree = "<group>"; };
 		EE3EBADB229A8E500073F3AF /* basic2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic2TableViewCell.swift; sourceTree = "<group>"; };
+		EE3EBADF22A004A70073F3AF /* Gmaps1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Gmaps1View.xib; sourceTree = "<group>"; };
+		EE3EBAE122A004E20073F3AF /* GMaps1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMaps1View.swift; sourceTree = "<group>"; };
+		EE3EBB0A22A20C890073F3AF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = GoogleMaps/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		EE3EBB0C22A20C920073F3AF /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		EEB7A1FB2290E30600A0C3F2 /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
 		EEB7A1FF2290E30600A0C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3EBB0B22A20C890073F3AF /* GoogleMaps.framework in Frameworks */,
+				EE3EBB0D22A20C930073F3AF /* GoogleMapsCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +404,23 @@
 			path = basicCell2;
 			sourceTree = "<group>";
 		};
+		EE3EBADD22A0046A0073F3AF /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBADE22A004750073F3AF /* Gmaps1 */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		EE3EBADE22A004750073F3AF /* Gmaps1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE3EBADF22A004A70073F3AF /* Gmaps1View.xib */,
+				EE3EBAE122A004E20073F3AF /* GMaps1View.swift */,
+			);
+			path = Gmaps1;
+			sourceTree = "<group>";
+		};
 		EEB7A1F12290E30600A0C3F2 = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +461,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE3EBADD22A0046A0073F3AF /* GoogleMaps */,
 				EE3EBAB922983B230073F3AF /* CardDisplay */,
 				0472FDF32297B91C00C72FDF /* Buttons */,
 				0410754D2294F1A900BE0F51 /* Ads */,
@@ -460,6 +488,8 @@
 		EEB7A20C229116D100A0C3F2 /* sdks */ = {
 			isa = PBXGroup;
 			children = (
+				EE3EBB0C22A20C920073F3AF /* GoogleMapsCore.framework */,
+				EE3EBB0A22A20C890073F3AF /* GoogleMaps.framework */,
 			);
 			path = sdks;
 			sourceTree = "<group>";
@@ -487,6 +517,7 @@
 				EEB7A1F72290E30600A0C3F2 /* Sources */,
 				EEB7A1F82290E30600A0C3F2 /* Frameworks */,
 				EEB7A1F92290E30600A0C3F2 /* Resources */,
+				7F7F828DD5FF68049518E338 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -549,6 +580,7 @@
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
 				041075002293D65500BE0F51 /* Content1View.xib in Resources */,
+				EE3EBAE022A004A70073F3AF /* Gmaps1View.xib in Resources */,
 				EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				EE3EBABC22983B490073F3AF /* card1View.xib in Resources */,
@@ -581,6 +613,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7F7F828DD5FF68049518E338 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -597,6 +651,7 @@
 				EE3EBAC8229A1DB00073F3AF /* Toolbar2View.swift in Sources */,
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
 				0410754C2294F06500BE0F51 /* UITextView+.swift in Sources */,
+				EE3EBAE222A004E20073F3AF /* GMaps1View.swift in Sources */,
 				EE3EBACF229A34FC0073F3AF /* AdvancePopup1.swift in Sources */,
 				EE3EBAD7229A8C860073F3AF /* basic1TableViewCell.swift in Sources */,
 				041075072293D8EB00BE0F51 /* Content2View.swift in Sources */,
@@ -753,13 +808,14 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F5E94QHJVA;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks",
+					"$(PROJECT_DIR)/UIComponentsFramework/sdks/GoogleMaps/Maps/Frameworks",
 				);
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -786,13 +842,14 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F5E94QHJVA;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks",
+					"$(PROJECT_DIR)/UIComponentsFramework/sdks/GoogleMaps/Maps/Frameworks",
 				);
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
