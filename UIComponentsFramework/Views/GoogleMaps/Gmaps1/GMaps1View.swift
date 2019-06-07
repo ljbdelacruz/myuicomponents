@@ -87,19 +87,12 @@ extension GMaps1View{
 }
 //MARK: Geocoding functions
 extension GMaps1View{
-    
-    
-    
-    
     public func region(coordinate:CLLocationCoordinate2D, radius:CLLocationDistance, identifier:String) -> CLCircularRegion {
         let region = CLCircularRegion(center: coordinate,
                                       radius: radius,
                                       identifier: identifier)
-        
-        
-        
-        region.notifyOnEntry = (geotification.eventType == .onEntry)
-        region.notifyOnExit = !region.notifyOnEntry
+//        region.notifyOnEntry = (geotification.eventType == .onEntry)
+//        region.notifyOnExit = !region.notifyOnEntry
         return region
     }
 }
