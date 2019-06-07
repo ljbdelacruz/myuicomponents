@@ -10,7 +10,6 @@ import UIKit
 
 public class card1View: UIView {
     public let xibname:String="card1View";
-    
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var cardName: UILabel!
@@ -19,7 +18,6 @@ public class card1View: UIView {
         didSet{
             self.setupTapRecognizer();
         }
-        
     }
     
     

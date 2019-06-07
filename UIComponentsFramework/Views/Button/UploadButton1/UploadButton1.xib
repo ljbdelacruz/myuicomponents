@@ -1,18 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadButton1" customModule="UIComponentsFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentview" destination="iN0-l3-epB" id="X63-f8-Jnk"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="176" height="141"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieposter" translatesAutoresizingMaskIntoConstraints="NO" id="e0G-1C-M8y">
+                    <rect key="frame" x="0.0" y="0.0" width="176" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="f4Y-Ce-7x1"/>
+                        <constraint firstAttribute="height" constant="112" id="gvT-Gd-E32"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAE-dZ-xr9">
+                    <rect key="frame" x="63" y="87" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ck3-60-cTe"/>
+                        <constraint firstAttribute="width" constant="50" id="pmh-N2-rfl"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="instagram"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e0G-1C-M8y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5H5-tP-t3W"/>
+                <constraint firstItem="nAE-dZ-xr9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="7IB-Ux-zHv"/>
+                <constraint firstItem="e0G-1C-M8y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7hk-0g-vto"/>
+                <constraint firstItem="e0G-1C-M8y" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="88U-Ew-ebt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nAE-dZ-xr9" secondAttribute="bottom" constant="4" id="bcd-nL-Nz2"/>
+                <constraint firstItem="nAE-dZ-xr9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="87" id="hjc-vc-hey"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nAE-dZ-xr9" secondAttribute="trailing" constant="63" id="w8f-6S-EgB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-105.59999999999999" y="284.70764617691157"/>
         </view>
     </objects>
+    <resources>
+        <image name="instagram" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="movieposter" width="468" height="263.25"/>
+    </resources>
 </document>

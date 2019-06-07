@@ -34,6 +34,9 @@
 		041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041075512294F2F000BE0F51 /* AdsContent1.swift */; };
 		0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472FDF52297B93A00C72FDF /* ViewButtonMenu1.xib */; };
 		0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */; };
+		049A9E1522AA59490053AC8A /* UploadButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E1422AA59490053AC8A /* UploadButton1.swift */; };
+		049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E1822AA599A0053AC8A /* UploadButton1.xib */; };
+		049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E1A22AA5C1F0053AC8A /* Button+.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -88,6 +91,9 @@
 		041075512294F2F000BE0F51 /* AdsContent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsContent1.swift; sourceTree = "<group>"; };
 		0472FDF52297B93A00C72FDF /* ViewButtonMenu1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewButtonMenu1.xib; sourceTree = "<group>"; };
 		0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtonMenu1.swift; sourceTree = "<group>"; };
+		049A9E1422AA59490053AC8A /* UploadButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadButton1.swift; sourceTree = "<group>"; };
+		049A9E1822AA599A0053AC8A /* UploadButton1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadButton1.xib; sourceTree = "<group>"; };
+		049A9E1A22AA5C1F0053AC8A /* Button+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+.swift"; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +162,7 @@
 				041074D3229390C900BE0F51 /* UIView+.swift */,
 				041074FB2293D33700BE0F51 /* UITextField+.swift */,
 				0410754B2294F06500BE0F51 /* UITextView+.swift */,
+				049A9E1A22AA5C1F0053AC8A /* Button+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -309,6 +316,23 @@
 				0472FDF72297BB2D00C72FDF /* ViewButtonMenu1.swift */,
 			);
 			path = ViewButtonMenu1;
+			sourceTree = "<group>";
+		};
+		049A9E1222AA59280053AC8A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E1322AA592D0053AC8A /* UploadButton1 */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		049A9E1322AA592D0053AC8A /* UploadButton1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E1422AA59490053AC8A /* UploadButton1.swift */,
+				049A9E1822AA599A0053AC8A /* UploadButton1.xib */,
+			);
+			path = UploadButton1;
 			sourceTree = "<group>";
 		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
@@ -475,6 +499,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E1222AA59280053AC8A /* Button */,
 				EE3EBADD22A0046A0073F3AF /* GoogleMaps */,
 				EE3EBAB922983B230073F3AF /* CardDisplay */,
 				0472FDF32297B91C00C72FDF /* Buttons */,
@@ -591,6 +616,7 @@
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
+				049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
@@ -657,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049A9E1522AA59490053AC8A /* UploadButton1.swift in Sources */,
 				041074F52293CCD100BE0F51 /* AutoTextFields.swift in Sources */,
 				041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */,
 				041074F12293CA2000BE0F51 /* BackgroundView.swift in Sources */,
@@ -684,6 +711,7 @@
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
 				041074E92293B4F400BE0F51 /* Toolbar1.swift in Sources */,
+				049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

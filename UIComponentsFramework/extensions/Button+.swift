@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+extension UIButton{
+    //0.5 = 50%;
+    public func setCornersToRounded(radius:CGFloat){
+        self.frame = CGRect(origin: self.frame.origin, size: self.frame.size);
+        self.layer.cornerRadius = radius * self.bounds.size.width;
+        self.clipsToBounds = true;
+    }
+    
+}
