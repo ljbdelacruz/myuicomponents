@@ -8,9 +8,17 @@
 
 import UIKit
 
+public protocol OTP4DigitHandler{
+    func submit4Digit(otp:String);
+}
+
 public class OTP4DigitView: UIView {
     public let xibname:String="OTP4DigitView";
     public var otp:String="";
+    
+    //set callback for this first
+    public var callback:OTP4DigitHandler?;
+    
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var autoTF1: AutoTextField!
     @IBOutlet weak var autoTF2: AutoTextField!
@@ -83,6 +91,8 @@ extension OTP4DigitView:AutoTextFieldDelegate{
             let otp = autoTF1.text! + autoTF2.text! + autoTF3.text! + autoTF4.text!
             self.otp = otp
             enableTextFields(true)
+            self.callback!.submit4Digit(otp:otp);
+            self.clearTextFields();
         default: break
         }
     }
@@ -92,12 +102,13 @@ extension OTP4DigitView:AutoTextFieldDelegate{
         autoTF3.isEnabled = yes
         autoTF4.isEnabled = yes
     }
-    func clearTextFields() {
+    public func clearTextFields(){
         autoTF1.clear()
         autoTF2.clear()
         autoTF3.clear()
         autoTF4.clear()
         autoTF1.becomeFirstResponder()
     }
+    
     
 }
