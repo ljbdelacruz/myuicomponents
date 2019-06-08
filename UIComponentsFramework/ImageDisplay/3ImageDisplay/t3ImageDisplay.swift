@@ -23,6 +23,8 @@ public class t3ImageDisplay: UIView {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
+        //set image to rounded please create implementation
+        
     }
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
