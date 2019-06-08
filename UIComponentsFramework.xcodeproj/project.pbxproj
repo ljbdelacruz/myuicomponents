@@ -61,6 +61,8 @@
 		EEB7A2002290E30600A0C3F2 /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB7A1FE2290E30600A0C3F2 /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7A2082290E35800A0C3F2 /* view1component.swift */; };
 		EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB7A20A2290E36600A0C3F2 /* view1.xib */; };
+		EEF07DBF22ABF79C00D9EBB6 /* 3ImageDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF07DBE22ABF79C00D9EBB6 /* 3ImageDisplay.xib */; };
+		EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF07DC222ABF85200D9EBB6 /* t3ImageDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,8 @@
 		EEB7A1FF2290E30600A0C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB7A2082290E35800A0C3F2 /* view1component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view1component.swift; sourceTree = "<group>"; };
 		EEB7A20A2290E36600A0C3F2 /* view1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = view1.xib; sourceTree = "<group>"; };
+		EEF07DBE22ABF79C00D9EBB6 /* 3ImageDisplay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = 3ImageDisplay.xib; sourceTree = "<group>"; };
+		EEF07DC222ABF85200D9EBB6 /* t3ImageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t3ImageDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +486,7 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EEF07DBC22ABF77900D9EBB6 /* ImageDisplay */,
 				EE3EBAD2229A8A410073F3AF /* TableViewCell */,
 				041074ED2293C78D00BE0F51 /* ImageView */,
 				041074EA2293B51800BE0F51 /* SupportFiles */,
@@ -531,6 +536,23 @@
 				EE3EBB0A22A20C890073F3AF /* GoogleMaps.framework */,
 			);
 			path = sdks;
+			sourceTree = "<group>";
+		};
+		EEF07DBC22ABF77900D9EBB6 /* ImageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				EEF07DBD22ABF78900D9EBB6 /* 3ImageDisplay */,
+			);
+			path = ImageDisplay;
+			sourceTree = "<group>";
+		};
+		EEF07DBD22ABF78900D9EBB6 /* 3ImageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				EEF07DBE22ABF79C00D9EBB6 /* 3ImageDisplay.xib */,
+				EEF07DC222ABF85200D9EBB6 /* t3ImageDisplay.swift */,
+			);
+			path = 3ImageDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -625,6 +647,7 @@
 				EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				EE3EBABC22983B490073F3AF /* card1View.xib in Resources */,
+				EEF07DBF22ABF79C00D9EBB6 /* 3ImageDisplay.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +733,7 @@
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
+				EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */,
 				041074E92293B4F400BE0F51 /* Toolbar1.swift in Sources */,
 				049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */,
 			);
