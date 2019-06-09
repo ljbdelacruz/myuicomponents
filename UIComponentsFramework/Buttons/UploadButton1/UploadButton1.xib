@@ -40,12 +40,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="e0G-1C-M8y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5H5-tP-t3W"/>
-                <constraint firstItem="nAE-dZ-xr9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="7IB-Ux-zHv"/>
+                <constraint firstItem="nAE-dZ-xr9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="7IB-Ux-zHv"/>
                 <constraint firstItem="e0G-1C-M8y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7hk-0g-vto"/>
                 <constraint firstItem="e0G-1C-M8y" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="88U-Ew-ebt"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nAE-dZ-xr9" secondAttribute="bottom" constant="4" id="bcd-nL-Nz2"/>
                 <constraint firstItem="nAE-dZ-xr9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="87" id="hjc-vc-hey"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nAE-dZ-xr9" secondAttribute="trailing" constant="63" id="w8f-6S-EgB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nAE-dZ-xr9" secondAttribute="trailing" constant="63" id="w8f-6S-EgB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
