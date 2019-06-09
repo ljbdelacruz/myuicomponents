@@ -65,6 +65,8 @@
 		EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF07DC222ABF85200D9EBB6 /* t3ImageDisplay.swift */; };
 		EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF07DC822ACB2A900D9EBB6 /* MenuButtons1.xib */; };
 		EEF07DCB22ACB40C00D9EBB6 /* MenuButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF07DCA22ACB40C00D9EBB6 /* MenuButton1.swift */; };
+		EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF07DCD22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib */; };
+		EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF07DCF22ACD93500D9EBB6 /* CreditDisplayButton1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +134,8 @@
 		EEF07DC222ABF85200D9EBB6 /* t3ImageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t3ImageDisplay.swift; sourceTree = "<group>"; };
 		EEF07DC822ACB2A900D9EBB6 /* MenuButtons1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButtons1.xib; sourceTree = "<group>"; };
 		EEF07DCA22ACB40C00D9EBB6 /* MenuButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton1.swift; sourceTree = "<group>"; };
+		EEF07DCD22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditsDisplayButton1.xib; sourceTree = "<group>"; };
+		EEF07DCF22ACD93500D9EBB6 /* CreditDisplayButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditDisplayButton1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +549,7 @@
 		EEF07DC422ACA2DC00D9EBB6 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				EEF07DCC22ACD8AD00D9EBB6 /* CreditDisplayButton1 */,
 				0472FDF42297B92600C72FDF /* ViewButtonMenu1 */,
 				EEF07DC522ACA31100D9EBB6 /* MenuButtons1 */,
 				049A9E1322AA592D0053AC8A /* UploadButton1 */,
@@ -559,6 +564,15 @@
 				EEF07DCA22ACB40C00D9EBB6 /* MenuButton1.swift */,
 			);
 			path = MenuButtons1;
+			sourceTree = "<group>";
+		};
+		EEF07DCC22ACD8AD00D9EBB6 /* CreditDisplayButton1 */ = {
+			isa = PBXGroup;
+			children = (
+				EEF07DCD22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib */,
+				EEF07DCF22ACD93500D9EBB6 /* CreditDisplayButton1.swift */,
+			);
+			path = CreditDisplayButton1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,6 +658,7 @@
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
+				EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */,
 				049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
@@ -732,6 +747,7 @@
 				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
 				041075022293D6EF00BE0F51 /* Content1View.swift in Sources */,
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
+				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
 				0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */,
 				EEF07DCB22ACB40C00D9EBB6 /* MenuButton1.swift in Sources */,
