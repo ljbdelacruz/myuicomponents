@@ -27,6 +27,7 @@ public class CreditDisplayButton1: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
+        self.setContainerCorner();
     }
     func setContainerCorner(){
         let transparent=UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0);
