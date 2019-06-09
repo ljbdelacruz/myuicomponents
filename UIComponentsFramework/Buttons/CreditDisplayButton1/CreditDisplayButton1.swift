@@ -32,6 +32,7 @@ public class CreditDisplayButton1: UIView {
         let transparent=UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 0);
         //setting up specific corners of the view radius
         container.roundCorners(corners: [.bottomRight, .topRight], radius: 20)
+        container.setMyShadow(radius: 3.0, width: 1.0, height: 1.0, opacity: 0.1);
     }
     
 

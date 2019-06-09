@@ -29,7 +29,7 @@ public class RoundedImageTextFields: UIView {
     }
     public func setDefault(){
         contentview.setupRadius(bgColor: UIColor.white, radius: 18);
-        contentview.setMyShadow();
+        contentview.setMyShadow(radius: 3.0, width: 1.0, height: 1.0, opacity: 0.1);
         mytextfield.backgroundColor=UIColor.white;
         mytextfield.textColor=UiUtil.hexStringToUIColor(hex: "B9B9B9");
         mytextfield.layer.borderWidth=0;

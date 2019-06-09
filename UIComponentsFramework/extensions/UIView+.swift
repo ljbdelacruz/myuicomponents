@@ -35,6 +35,16 @@ extension UIView
         layer.mask = mask
     }
     
+    
+    //setting up shadow for uiview
+    public func setMyShadow(radius:CGFloat, width:CGFloat, height:CGFloat, opacity:Float){
+        self.layer.masksToBounds = false
+        self.layer.shadowRadius = radius;
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: width, height: height);
+        self.layer.shadowOpacity = opacity;
+    }
+    
 }
 
 
@@ -48,14 +58,5 @@ extension UIView{
             self.alpha=1;
             self.frame.origin.y = self.frame.origin.y + 200;
         })
-    }
-    
-    
-    public func setMyShadow(){
-        self.layer.masksToBounds = false
-        self.layer.shadowRadius = 3.0
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0);
-        self.layer.shadowOpacity = 1.0
     }
 }
