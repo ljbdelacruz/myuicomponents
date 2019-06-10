@@ -22,4 +22,11 @@ extension UIImageView{
         self.layer.cornerRadius = (self.frame.width / 2)
         self.layer.masksToBounds = true
     }
+    
+    
+    public func decodeBase64ToImage(){
+//        let dataDecoded:NSData = NSData(base64EncodedString: strBase64, options: NSDataBase64DecodingOptions(rawValue: 0))!
+//        let decodedimage:UIImage = UIImage(data: dataDecoded)!
+//        yourImageView.image = decodedimage
+    }
 }
