@@ -1,0 +1,56 @@
+//
+//  CategoryButton1.swift
+//  UIComponentsFramework
+//
+//  Created by devops on 10/06/2019.
+//  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
+//
+
+import UIKit
+
+public class CategoryButton1: UIView {
+    public let xibname:String="CategoryButton1";
+    @IBOutlet var contentview: UIView!
+    @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var descTitle: UILabel!
+    @IBOutlet weak var subDesc: UILabel!
+    public var eventOnClick: (() -> Void)?{
+        didSet{
+            self.setupTapRecognizer();
+        }
+    }
+    
+    
+    override public init(frame: CGRect){
+        super.init(frame: frame)
+        commonInit()
+    }
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    public func commonInit() {
+        Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
+        contentview.fixInView(self)
+    }
+    
+    public func setImage(image:UIImage){
+        self.myImage.image=image;
+    }
+    public func setDesc(desc:String, subDesc:String){
+        self.descTitle.text=desc;
+        self.subDesc.text=subDesc;
+    }
+    
+
+}
+
+extension CategoryButton1{
+    func setupTapRecognizer(){
+        contentview.setUIRecognizer(selector: #selector(onClick));
+    }
+    @objc
+    func onClick(){
+        eventOnClick?();
+    }
+}
