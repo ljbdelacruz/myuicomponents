@@ -44,6 +44,8 @@
 		049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E2922AE35440053AC8A /* UIImageView+.swift */; };
 		049A9E2D22AE41E40053AC8A /* CategoryButton1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E2C22AE41E40053AC8A /* CategoryButton1.xib */; };
 		049A9E2F22AE43FB0053AC8A /* CategoryButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E2E22AE43FB0053AC8A /* CategoryButton1.swift */; };
+		049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E3122AE46B40053AC8A /* twoEventTF1.xib */; };
+		049A9E3422AE49D40053AC8A /* twoEventTF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3322AE49D40053AC8A /* twoEventTF1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -114,6 +116,8 @@
 		049A9E2922AE35440053AC8A /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		049A9E2C22AE41E40053AC8A /* CategoryButton1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryButton1.xib; sourceTree = "<group>"; };
 		049A9E2E22AE43FB0053AC8A /* CategoryButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton1.swift; sourceTree = "<group>"; };
+		049A9E3122AE46B40053AC8A /* twoEventTF1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = twoEventTF1.xib; sourceTree = "<group>"; };
+		049A9E3322AE49D40053AC8A /* twoEventTF1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoEventTF1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +229,7 @@
 		041074E22293B37700BE0F51 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E3022AE467F0053AC8A /* twoEventTF1 */,
 				04DC39E5229BE27A0004D473 /* RoundedImageTextFields */,
 				041074E32293B38400BE0F51 /* AutoTextFields */,
 			);
@@ -387,6 +392,15 @@
 				049A9E2E22AE43FB0053AC8A /* CategoryButton1.swift */,
 			);
 			path = CategoryButton1;
+			sourceTree = "<group>";
+		};
+		049A9E3022AE467F0053AC8A /* twoEventTF1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E3122AE46B40053AC8A /* twoEventTF1.xib */,
+				049A9E3322AE49D40053AC8A /* twoEventTF1.swift */,
+			);
+			path = twoEventTF1;
 			sourceTree = "<group>";
 		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
@@ -735,6 +749,7 @@
 				EEF07DBF22ABF79C00D9EBB6 /* 3ImageDisplay.xib in Resources */,
 				EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
+				049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +832,7 @@
 				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
 				049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
+				049A9E3422AE49D40053AC8A /* twoEventTF1.swift in Sources */,
 				0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */,
 				EEF07DCB22ACB40C00D9EBB6 /* MenuButton1.swift in Sources */,
 				EE3EBABE229843050073F3AF /* card1View.swift in Sources */,

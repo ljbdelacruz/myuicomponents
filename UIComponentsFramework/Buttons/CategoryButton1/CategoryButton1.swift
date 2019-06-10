@@ -41,10 +41,8 @@ public class CategoryButton1: UIView {
         self.descTitle.text=desc;
         self.subDesc.text=subDesc;
     }
-    
-
 }
-
+//MARK: set recognizer
 extension CategoryButton1{
     func setupTapRecognizer(){
         contentview.setUIRecognizer(selector: #selector(onClick));
