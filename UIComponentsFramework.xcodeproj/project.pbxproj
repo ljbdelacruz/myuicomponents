@@ -46,6 +46,8 @@
 		049A9E2F22AE43FB0053AC8A /* CategoryButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E2E22AE43FB0053AC8A /* CategoryButton1.swift */; };
 		049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E3122AE46B40053AC8A /* twoEventTF1.xib */; };
 		049A9E3422AE49D40053AC8A /* twoEventTF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3322AE49D40053AC8A /* twoEventTF1.swift */; };
+		049A9E3822AE56050053AC8A /* RoundedButtonDesign1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E3722AE56050053AC8A /* RoundedButtonDesign1.xib */; };
+		049A9E3A22AE563A0053AC8A /* RoundedButtonDesign1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -118,6 +120,8 @@
 		049A9E2E22AE43FB0053AC8A /* CategoryButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton1.swift; sourceTree = "<group>"; };
 		049A9E3122AE46B40053AC8A /* twoEventTF1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = twoEventTF1.xib; sourceTree = "<group>"; };
 		049A9E3322AE49D40053AC8A /* twoEventTF1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoEventTF1.swift; sourceTree = "<group>"; };
+		049A9E3722AE56050053AC8A /* RoundedButtonDesign1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedButtonDesign1.xib; sourceTree = "<group>"; };
+		049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonDesign1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -403,6 +407,23 @@
 			path = twoEventTF1;
 			sourceTree = "<group>";
 		};
+		049A9E3522AE55E50053AC8A /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E3622AE55F10053AC8A /* RoundedButtonDesign1 */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		049A9E3622AE55F10053AC8A /* RoundedButtonDesign1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E3722AE56050053AC8A /* RoundedButtonDesign1.xib */,
+				049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */,
+			);
+			path = RoundedButtonDesign1;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,6 +591,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E3522AE55E50053AC8A /* Design */,
 				049A9E2322AE2BD90053AC8A /* UserDisplay */,
 				EE3EBADD22A0046A0073F3AF /* GoogleMaps */,
 				EE3EBAB922983B230073F3AF /* CardDisplay */,
@@ -750,6 +772,7 @@
 				EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 				049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */,
+				049A9E3822AE56050053AC8A /* RoundedButtonDesign1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +865,7 @@
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
 				EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */,
+				049A9E3A22AE563A0053AC8A /* RoundedButtonDesign1.swift in Sources */,
 				041074E92293B4F400BE0F51 /* Toolbar1.swift in Sources */,
 				049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */,
 			);
