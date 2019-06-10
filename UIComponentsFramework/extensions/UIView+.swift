@@ -44,6 +44,12 @@ extension UIView
         self.layer.shadowOffset = CGSize(width: width, height: height);
         self.layer.shadowOpacity = opacity;
     }
+    //MARK: setup recognizer
+    //setup recognizer for this uiview
+    public func setUIRecognizer(selector:Selector?){
+        let recog = UITapGestureRecognizer(target: self, action:selector!);
+        self.addGestureRecognizer(recog);
+    }
     
 }
 
@@ -59,4 +65,5 @@ extension UIView{
             self.frame.origin.y = self.frame.origin.y + 200;
         })
     }
+    
 }

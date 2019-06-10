@@ -37,6 +37,8 @@
 		049A9E1522AA59490053AC8A /* UploadButton1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E1422AA59490053AC8A /* UploadButton1.swift */; };
 		049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E1822AA599A0053AC8A /* UploadButton1.xib */; };
 		049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E1A22AA5C1F0053AC8A /* Button+.swift */; };
+		049A9E2022AE0FF10053AC8A /* RatingsCustom1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E1F22AE0FF10053AC8A /* RatingsCustom1.xib */; };
+		049A9E2222AE11D50053AC8A /* RatingsCustom1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E2122AE11D50053AC8A /* RatingsCustom1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -100,6 +102,8 @@
 		049A9E1422AA59490053AC8A /* UploadButton1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadButton1.swift; sourceTree = "<group>"; };
 		049A9E1822AA599A0053AC8A /* UploadButton1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadButton1.xib; sourceTree = "<group>"; };
 		049A9E1A22AA5C1F0053AC8A /* Button+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+.swift"; sourceTree = "<group>"; };
+		049A9E1F22AE0FF10053AC8A /* RatingsCustom1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingsCustom1.xib; sourceTree = "<group>"; };
+		049A9E2122AE11D50053AC8A /* RatingsCustom1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsCustom1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,6 +335,23 @@
 			path = UploadButton1;
 			sourceTree = "<group>";
 		};
+		049A9E1D22AE0FCE0053AC8A /* ratings */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E1E22AE0FE00053AC8A /* ratingsCustom1 */,
+			);
+			path = ratings;
+			sourceTree = "<group>";
+		};
+		049A9E1E22AE0FE00053AC8A /* ratingsCustom1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E1F22AE0FF10053AC8A /* RatingsCustom1.xib */,
+				049A9E2122AE11D50053AC8A /* RatingsCustom1.swift */,
+			);
+			path = ratingsCustom1;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +499,7 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E1D22AE0FCE0053AC8A /* ratings */,
 				041074D22293909C00BE0F51 /* extensions */,
 				EEF07DC422ACA2DC00D9EBB6 /* Buttons */,
 				EEF07DBC22ABF77900D9EBB6 /* ImageDisplay */,
@@ -667,6 +689,7 @@
 				EE3EBAE022A004A70073F3AF /* Gmaps1View.xib in Resources */,
 				EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
+				049A9E2022AE0FF10053AC8A /* RatingsCustom1.xib in Resources */,
 				EE3EBABC22983B490073F3AF /* card1View.xib in Resources */,
 				EEF07DBF22ABF79C00D9EBB6 /* 3ImageDisplay.xib in Resources */,
 				EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */,
@@ -735,6 +758,7 @@
 				041074E12293A27E00BE0F51 /* PopupBasic2.swift in Sources */,
 				EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
+				049A9E2222AE11D50053AC8A /* RatingsCustom1.swift in Sources */,
 				EE3EBAC8229A1DB00073F3AF /* Toolbar2View.swift in Sources */,
 				04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */,
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,

@@ -42,12 +42,8 @@ public class Content1View: UIView {
 }
 //MARK: setting up recognizer
 extension Content1View{
-    public func getRecog()->UITapGestureRecognizer{
-        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
-        return recog;
-    }
     public func setupTapRecognizer(){
-        contentview.addGestureRecognizer(self.getRecog());
+        contentview.setUIRecognizer(selector: #selector(onClick))
     }
     @objc
     func onClick(){
