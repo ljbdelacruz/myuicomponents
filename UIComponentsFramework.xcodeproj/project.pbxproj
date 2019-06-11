@@ -62,6 +62,8 @@
 		049A9E5C22AF9DC80053AC8A /* buttonCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E5B22AF9DC80053AC8A /* buttonCell1.xib */; };
 		049A9E5E22AF9E490053AC8A /* buttonCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5D22AF9E490053AC8A /* buttonCell1TableViewCell.swift */; };
 		049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */; };
+		049A9E6322AFA2AF0053AC8A /* PointsCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6222AFA2AF0053AC8A /* PointsCell1.xib */; };
+		049A9E6522AFA3DE0053AC8A /* PointsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -150,6 +152,8 @@
 		049A9E5B22AF9DC80053AC8A /* buttonCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonCell1.xib; sourceTree = "<group>"; };
 		049A9E5D22AF9E490053AC8A /* buttonCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonCell1TableViewCell.swift; sourceTree = "<group>"; };
 		049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell1TableViewCell.swift; sourceTree = "<group>"; };
+		049A9E6222AFA2AF0053AC8A /* PointsCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsCell1.xib; sourceTree = "<group>"; };
+		049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsCell1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -518,6 +522,15 @@
 			path = buttonCell1;
 			sourceTree = "<group>";
 		};
+		049A9E6122AFA2960053AC8A /* PointsCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E6222AFA2AF0053AC8A /* PointsCell1.xib */,
+				049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */,
+			);
+			path = PointsCell1;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +614,7 @@
 		EE3EBAD2229A8A410073F3AF /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E6122AFA2960053AC8A /* PointsCell1 */,
 				049A9E5A22AF9DA50053AC8A /* buttonCell1 */,
 				049A9E5722AF96D30053AC8A /* cardCell2 */,
 				049A9E4F22AF94C80053AC8A /* cardCell1 */,
@@ -877,6 +891,7 @@
 				049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */,
 				049A9E5922AF96DD0053AC8A /* cardCell2.xib in Resources */,
 				049A9E5C22AF9DC80053AC8A /* buttonCell1.xib in Resources */,
+				049A9E6322AFA2AF0053AC8A /* PointsCell1.xib in Resources */,
 				049A9E3822AE56050053AC8A /* RoundedButtonDesign1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -943,6 +958,7 @@
 				EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
 				049A9E2F22AE43FB0053AC8A /* CategoryButton1.swift in Sources */,
+				049A9E6522AFA3DE0053AC8A /* PointsCell1.swift in Sources */,
 				049A9E2222AE11D50053AC8A /* RatingsCustom1.swift in Sources */,
 				049A9E2822AE31340053AC8A /* UserDisplayCustom1.swift in Sources */,
 				EE3EBAC8229A1DB00073F3AF /* Toolbar2View.swift in Sources */,
