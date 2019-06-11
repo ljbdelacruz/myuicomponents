@@ -17,29 +17,29 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="NJn-dK-rDz">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell2" rowHeight="49" id="NJn-dK-rDz" customClass="basic2TableViewCell" customModule="UIComponentsFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NJn-dK-rDz" id="Bwo-9D-nYW">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="97.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oUV-Hn-yDm">
-                        <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="97" id="Tlh-jX-5eY"/>
-                            <constraint firstAttribute="height" constant="97" id="nG0-58-7yV"/>
+                            <constraint firstAttribute="width" constant="50" id="Tlh-jX-5eY"/>
+                            <constraint firstAttribute="height" constant="50" id="nG0-58-7yV"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9h-bd-uOV">
-                        <rect key="frame" x="105" y="38" width="246" height="21"/>
+                        <rect key="frame" x="58" y="14.5" width="293" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="o9h-bd-uOV" firstAttribute="top" secondItem="Bwo-9D-nYW" secondAttribute="topMargin" constant="27" id="9FI-3B-O5F"/>
+                    <constraint firstItem="o9h-bd-uOV" firstAttribute="top" secondItem="Bwo-9D-nYW" secondAttribute="topMargin" constant="3" id="9FI-3B-O5F"/>
                     <constraint firstItem="oUV-Hn-yDm" firstAttribute="top" secondItem="Bwo-9D-nYW" secondAttribute="top" id="ZuZ-wH-5Od"/>
                     <constraint firstItem="oUV-Hn-yDm" firstAttribute="leading" secondItem="Bwo-9D-nYW" secondAttribute="leading" id="mfX-XX-8Q7"/>
                     <constraint firstItem="o9h-bd-uOV" firstAttribute="leading" secondItem="oUV-Hn-yDm" secondAttribute="trailing" constant="8" id="trD-To-Caz"/>
@@ -47,7 +47,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="o9h-bd-uOV" secondAttribute="trailing" constant="8" id="xci-WZ-O10"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="60" y="121.4392803598201"/>
+            <point key="canvasLocation" x="60" y="99.400299850074973"/>
         </tableViewCell>
     </objects>
 </document>

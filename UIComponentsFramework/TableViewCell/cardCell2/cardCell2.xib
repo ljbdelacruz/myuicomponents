@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardCell2" rowHeight="60" id="CXg-rC-Mqf" customClass="cardCell2" customModule="UIComponentsFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CXg-rC-Mqf" id="9Cy-Dn-kiX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1NI-Xr-OcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0V0-aD-ndx"/>
+                            <constraint firstAttribute="height" constant="60" id="tRa-FG-eOT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOLD CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6s-96-0N2">
+                        <rect key="frame" x="108" y="12" width="112.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BGO-LX-scT"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="dly-E3-0Df"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXX-XXXX-XXXX-4206" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-df-coO">
+                        <rect key="frame" x="108" y="32" width="172" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="gp3-mZ-LyT"/>
+                            <constraint firstAttribute="height" constant="16" id="oQ1-lT-f4X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvd-Ca-Yua">
+                        <rect key="frame" x="325" y="18" width="39" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0I5-eE-9VD"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="QJi-C0-o9q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1NI-Xr-OcQ" firstAttribute="leading" secondItem="9Cy-Dn-kiX" secondAttribute="leading" id="1Bl-UY-aj4"/>
+                    <constraint firstAttribute="trailing" secondItem="Pvd-Ca-Yua" secondAttribute="trailing" constant="11" id="OQf-XH-Tm1"/>
+                    <constraint firstItem="o6s-96-0N2" firstAttribute="top" secondItem="9Cy-Dn-kiX" secondAttribute="topMargin" constant="1" id="WEF-82-BAk"/>
+                    <constraint firstItem="Pvd-Ca-Yua" firstAttribute="top" secondItem="9Cy-Dn-kiX" secondAttribute="top" constant="18" id="YAB-mq-jQK"/>
+                    <constraint firstAttribute="bottom" secondItem="1NI-Xr-OcQ" secondAttribute="bottom" id="cPO-nA-kVI"/>
+                    <constraint firstItem="o6s-96-0N2" firstAttribute="leading" secondItem="1NI-Xr-OcQ" secondAttribute="trailing" constant="8" id="gjZ-1O-MKV"/>
+                    <constraint firstAttribute="bottom" secondItem="Pvd-Ca-Yua" secondAttribute="bottom" constant="18" id="inO-py-NmL"/>
+                    <constraint firstItem="1NI-Xr-OcQ" firstAttribute="top" secondItem="9Cy-Dn-kiX" secondAttribute="top" id="tZ4-ob-iHC"/>
+                    <constraint firstItem="gdU-df-coO" firstAttribute="leading" secondItem="1NI-Xr-OcQ" secondAttribute="trailing" constant="8" id="uVy-aA-OWF"/>
+                    <constraint firstItem="gdU-df-coO" firstAttribute="top" secondItem="o6s-96-0N2" secondAttribute="bottom" id="zkt-Fg-SEr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardNum" destination="gdU-df-coO" id="Egh-7f-1JS"/>
+                <outlet property="myimage" destination="1NI-Xr-OcQ" id="xcS-iJ-5EQ"/>
+                <outlet property="mypoints" destination="Pvd-Ca-Yua" id="NTc-91-xFR"/>
+                <outlet property="mytitle" destination="o6s-96-0N2" id="Nmi-JG-rj1"/>
+            </connections>
+            <point key="canvasLocation" x="96.799999999999997" y="82.758620689655174"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,24 +1,23 @@
 //
-//  basic2TableViewCell.swift
+//  buttonCell1TableViewCell.swift
 //  UIComponentsFramework
 //
-//  Created by Lainel John Dela Cruz on 5/26/19.
+//  Created by devops on 11/06/2019.
 //  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
 //
 
 import UIKit
 
-public class basic2TableViewCell: UITableViewCell {
-    public static let identifier:String="basicCell2";
-    public static let nibname:String="basicCell2";
-    @IBOutlet var mytvcell: UITableViewCell!
-    @IBOutlet weak var myimage: UIImageView!
+public class buttonCell1TableViewCell: UITableViewCell {
+    public static let identifier:String="buttonCell1";
+    public static let nibname:String="buttonCell1";
+    
     @IBOutlet weak var mytitle: UILabel!
+    @IBOutlet weak var myimage: UIImageView!
     
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

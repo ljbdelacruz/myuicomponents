@@ -54,6 +54,14 @@
 		049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */; };
 		049A9E4722AF83540053AC8A /* AdsTemplate1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E4622AF83540053AC8A /* AdsTemplate1.xib */; };
 		049A9E4922AF83870053AC8A /* AdsTemplate1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4822AF83870053AC8A /* AdsTemplate1.swift */; };
+		049A9E4C22AF90E20053AC8A /* transactionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E4B22AF90E20053AC8A /* transactionCell1.xib */; };
+		049A9E4E22AF93190053AC8A /* transactionCell1TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4D22AF93190053AC8A /* transactionCell1TV.swift */; };
+		049A9E5322AF94F20053AC8A /* cardCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E5222AF94F20053AC8A /* cardCell1.xib */; };
+		049A9E5522AF96330053AC8A /* cardCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5422AF96330053AC8A /* cardCell1.swift */; };
+		049A9E5922AF96DD0053AC8A /* cardCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E5822AF96DD0053AC8A /* cardCell2.xib */; };
+		049A9E5C22AF9DC80053AC8A /* buttonCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E5B22AF9DC80053AC8A /* buttonCell1.xib */; };
+		049A9E5E22AF9E490053AC8A /* buttonCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5D22AF9E490053AC8A /* buttonCell1TableViewCell.swift */; };
+		049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -134,6 +142,14 @@
 		049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsDescription1.swift; sourceTree = "<group>"; };
 		049A9E4622AF83540053AC8A /* AdsTemplate1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsTemplate1.xib; sourceTree = "<group>"; };
 		049A9E4822AF83870053AC8A /* AdsTemplate1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsTemplate1.swift; sourceTree = "<group>"; };
+		049A9E4B22AF90E20053AC8A /* transactionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transactionCell1.xib; sourceTree = "<group>"; };
+		049A9E4D22AF93190053AC8A /* transactionCell1TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionCell1TV.swift; sourceTree = "<group>"; };
+		049A9E5222AF94F20053AC8A /* cardCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cardCell1.xib; sourceTree = "<group>"; };
+		049A9E5422AF96330053AC8A /* cardCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell1.swift; sourceTree = "<group>"; };
+		049A9E5822AF96DD0053AC8A /* cardCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cardCell2.xib; sourceTree = "<group>"; };
+		049A9E5B22AF9DC80053AC8A /* buttonCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonCell1.xib; sourceTree = "<group>"; };
+		049A9E5D22AF9E490053AC8A /* buttonCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonCell1TableViewCell.swift; sourceTree = "<group>"; };
+		049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell1TableViewCell.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -466,6 +482,42 @@
 			path = AdsTemplate1;
 			sourceTree = "<group>";
 		};
+		049A9E4A22AF90CE0053AC8A /* transactionCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E4B22AF90E20053AC8A /* transactionCell1.xib */,
+				049A9E4D22AF93190053AC8A /* transactionCell1TV.swift */,
+			);
+			path = transactionCell1;
+			sourceTree = "<group>";
+		};
+		049A9E4F22AF94C80053AC8A /* cardCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E5222AF94F20053AC8A /* cardCell1.xib */,
+				049A9E5422AF96330053AC8A /* cardCell1.swift */,
+			);
+			path = cardCell1;
+			sourceTree = "<group>";
+		};
+		049A9E5722AF96D30053AC8A /* cardCell2 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E5822AF96DD0053AC8A /* cardCell2.xib */,
+				049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */,
+			);
+			path = cardCell2;
+			sourceTree = "<group>";
+		};
+		049A9E5A22AF9DA50053AC8A /* buttonCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E5B22AF9DC80053AC8A /* buttonCell1.xib */,
+				049A9E5D22AF9E490053AC8A /* buttonCell1TableViewCell.swift */,
+			);
+			path = buttonCell1;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +601,10 @@
 		EE3EBAD2229A8A410073F3AF /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E5A22AF9DA50053AC8A /* buttonCell1 */,
+				049A9E5722AF96D30053AC8A /* cardCell2 */,
+				049A9E4F22AF94C80053AC8A /* cardCell1 */,
+				049A9E4A22AF90CE0053AC8A /* transactionCell1 */,
 				EE3EBAD8229A8DA90073F3AF /* basicCell2 */,
 				EE3EBAD3229A8A4D0073F3AF /* basicCell1 */,
 			);
@@ -789,6 +845,7 @@
 				EE3EBAC6229939CB0073F3AF /* ToolBar2View.xib in Resources */,
 				0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */,
 				04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */,
+				049A9E5322AF94F20053AC8A /* cardCell1.xib in Resources */,
 				049A9E2622AE2CD60053AC8A /* UserDisplayCustom1.xib in Resources */,
 				EE3EBACD229A34E90073F3AF /* AdvancePopup1.xib in Resources */,
 				EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */,
@@ -803,6 +860,7 @@
 				EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */,
 				049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
+				049A9E4C22AF90E20053AC8A /* transactionCell1.xib in Resources */,
 				049A9E4222AF5BA20053AC8A /* AdsDescription1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
@@ -817,6 +875,8 @@
 				EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 				049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */,
+				049A9E5922AF96DD0053AC8A /* cardCell2.xib in Resources */,
+				049A9E5C22AF9DC80053AC8A /* buttonCell1.xib in Resources */,
 				049A9E3822AE56050053AC8A /* RoundedButtonDesign1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,17 +956,21 @@
 				041075072293D8EB00BE0F51 /* Content2View.swift in Sources */,
 				041074D4229390C900BE0F51 /* UIView+.swift in Sources */,
 				041074D12293905300BE0F51 /* myProgressHUDBasic.swift in Sources */,
+				049A9E5E22AF9E490053AC8A /* buttonCell1TableViewCell.swift in Sources */,
 				041075022293D6EF00BE0F51 /* Content1View.swift in Sources */,
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
 				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
+				049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */,
 				049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
 				049A9E3422AE49D40053AC8A /* twoEventTF1.swift in Sources */,
 				0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */,
 				EEF07DCB22ACB40C00D9EBB6 /* MenuButton1.swift in Sources */,
+				049A9E5522AF96330053AC8A /* cardCell1.swift in Sources */,
 				EE3EBABE229843050073F3AF /* card1View.swift in Sources */,
 				049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */,
 				EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */,
+				049A9E4E22AF93190053AC8A /* transactionCell1TV.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
