@@ -52,6 +52,8 @@
 		049A9E3F22AF445C0053AC8A /* AdsTitle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3E22AF445C0053AC8A /* AdsTitle1.swift */; };
 		049A9E4222AF5BA20053AC8A /* AdsDescription1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E4122AF5BA20053AC8A /* AdsDescription1.xib */; };
 		049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */; };
+		049A9E4722AF83540053AC8A /* AdsTemplate1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E4622AF83540053AC8A /* AdsTemplate1.xib */; };
+		049A9E4922AF83870053AC8A /* AdsTemplate1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4822AF83870053AC8A /* AdsTemplate1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -130,6 +132,8 @@
 		049A9E3E22AF445C0053AC8A /* AdsTitle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsTitle1.swift; sourceTree = "<group>"; };
 		049A9E4122AF5BA20053AC8A /* AdsDescription1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsDescription1.xib; sourceTree = "<group>"; };
 		049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsDescription1.swift; sourceTree = "<group>"; };
+		049A9E4622AF83540053AC8A /* AdsTemplate1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsTemplate1.xib; sourceTree = "<group>"; };
+		049A9E4822AF83870053AC8A /* AdsTemplate1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsTemplate1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -330,6 +334,7 @@
 		0410754D2294F1A900BE0F51 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E4522AF69FC0053AC8A /* AdsTemplate1 */,
 				049A9E4022AF5B920053AC8A /* AdsDescription1 */,
 				049A9E3B22AF43280053AC8A /* AdsTitle1 */,
 				EE3EBABF2298E6B30073F3AF /* AdsContent2 */,
@@ -450,6 +455,15 @@
 				049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */,
 			);
 			path = AdsDescription1;
+			sourceTree = "<group>";
+		};
+		049A9E4522AF69FC0053AC8A /* AdsTemplate1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E4622AF83540053AC8A /* AdsTemplate1.xib */,
+				049A9E4822AF83870053AC8A /* AdsTemplate1.swift */,
+			);
+			path = AdsTemplate1;
 			sourceTree = "<group>";
 		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
@@ -784,6 +798,7 @@
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
+				049A9E4722AF83540053AC8A /* AdsTemplate1.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */,
 				049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */,
@@ -875,6 +890,7 @@
 				041074FA2293D10700BE0F51 /* OTP4DigitView.swift in Sources */,
 				0410754C2294F06500BE0F51 /* UITextView+.swift in Sources */,
 				EE3EBAE222A004E20073F3AF /* GMaps1View.swift in Sources */,
+				049A9E4922AF83870053AC8A /* AdsTemplate1.swift in Sources */,
 				EE3EBACF229A34FC0073F3AF /* AdvancePopup1.swift in Sources */,
 				EE3EBAD7229A8C860073F3AF /* basic1TableViewCell.swift in Sources */,
 				041075072293D8EB00BE0F51 /* Content2View.swift in Sources */,
