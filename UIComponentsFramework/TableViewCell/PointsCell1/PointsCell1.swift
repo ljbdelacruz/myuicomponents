@@ -11,9 +11,9 @@ import UIKit
 public class PointsCell1: UITableViewCell {
     public static let identifier:String="PointsCell1";
     public static let nibname:String="PointsCell1";
-    @IBOutlet weak var monthLabel: UILabel!
-    @IBOutlet weak var points: UILabel!
-    @IBOutlet weak var subDesc: UILabel!
+    @IBOutlet public weak var monthLabel: UILabel!
+    @IBOutlet public weak var points: UILabel!
+    @IBOutlet public weak var subDesc: UILabel!
     
     
     override public func awakeFromNib() {

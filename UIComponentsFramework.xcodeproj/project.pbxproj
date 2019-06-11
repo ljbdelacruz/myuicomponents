@@ -64,6 +64,8 @@
 		049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */; };
 		049A9E6322AFA2AF0053AC8A /* PointsCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6222AFA2AF0053AC8A /* PointsCell1.xib */; };
 		049A9E6522AFA3DE0053AC8A /* PointsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */; };
+		049A9E6A22AFB0E30053AC8A /* promotionCCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6922AFB0E30053AC8A /* promotionCCell1.xib */; };
+		049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -154,6 +156,8 @@
 		049A9E5F22AF9F670053AC8A /* cardCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell1TableViewCell.swift; sourceTree = "<group>"; };
 		049A9E6222AFA2AF0053AC8A /* PointsCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsCell1.xib; sourceTree = "<group>"; };
 		049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsCell1.swift; sourceTree = "<group>"; };
+		049A9E6922AFB0E30053AC8A /* promotionCCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = promotionCCell1.xib; sourceTree = "<group>"; };
+		049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCCell1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -531,6 +535,23 @@
 			path = PointsCell1;
 			sourceTree = "<group>";
 		};
+		049A9E6722AFB0C40053AC8A /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E6822AFB0CC0053AC8A /* PromotionCCell1 */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		049A9E6822AFB0CC0053AC8A /* PromotionCCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E6922AFB0E30053AC8A /* promotionCCell1.xib */,
+				049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */,
+			);
+			path = PromotionCCell1;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +704,7 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E6722AFB0C40053AC8A /* CollectionCell */,
 				049A9E1D22AE0FCE0053AC8A /* ratings */,
 				041074D22293909C00BE0F51 /* extensions */,
 				EEF07DC422ACA2DC00D9EBB6 /* Buttons */,
@@ -867,6 +889,7 @@
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
+				049A9E6A22AFB0E30053AC8A /* promotionCCell1.xib in Resources */,
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
 				049A9E4722AF83540053AC8A /* AdsTemplate1.xib in Resources */,
@@ -976,6 +999,7 @@
 				041075022293D6EF00BE0F51 /* Content1View.swift in Sources */,
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
 				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
+				049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */,
 				049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */,
 				049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
