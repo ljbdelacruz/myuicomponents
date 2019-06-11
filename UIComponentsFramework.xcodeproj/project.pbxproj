@@ -66,6 +66,8 @@
 		049A9E6522AFA3DE0053AC8A /* PointsCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */; };
 		049A9E6A22AFB0E30053AC8A /* promotionCCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6922AFB0E30053AC8A /* promotionCCell1.xib */; };
 		049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */; };
+		049A9E6F22AFB4180053AC8A /* basicCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6E22AFB4180053AC8A /* basicCell3.xib */; };
+		049A9E7122AFB4E80053AC8A /* basicCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E7022AFB4E80053AC8A /* basicCell3.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -158,6 +160,8 @@
 		049A9E6422AFA3DE0053AC8A /* PointsCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsCell1.swift; sourceTree = "<group>"; };
 		049A9E6922AFB0E30053AC8A /* promotionCCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = promotionCCell1.xib; sourceTree = "<group>"; };
 		049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCCell1.swift; sourceTree = "<group>"; };
+		049A9E6E22AFB4180053AC8A /* basicCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell3.xib; sourceTree = "<group>"; };
+		049A9E7022AFB4E80053AC8A /* basicCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicCell3.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -552,6 +556,15 @@
 			path = PromotionCCell1;
 			sourceTree = "<group>";
 		};
+		049A9E6D22AFB4070053AC8A /* basicCell3 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E6E22AFB4180053AC8A /* basicCell3.xib */,
+				049A9E7022AFB4E80053AC8A /* basicCell3.swift */,
+			);
+			path = basicCell3;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +648,7 @@
 		EE3EBAD2229A8A410073F3AF /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E6D22AFB4070053AC8A /* basicCell3 */,
 				049A9E6122AFA2960053AC8A /* PointsCell1 */,
 				049A9E5A22AF9DA50053AC8A /* buttonCell1 */,
 				049A9E5722AF96D30053AC8A /* cardCell2 */,
@@ -881,6 +895,7 @@
 				EE3EBAC6229939CB0073F3AF /* ToolBar2View.xib in Resources */,
 				0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */,
 				04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */,
+				049A9E6F22AFB4180053AC8A /* basicCell3.xib in Resources */,
 				049A9E5322AF94F20053AC8A /* cardCell1.xib in Resources */,
 				049A9E2622AE2CD60053AC8A /* UserDisplayCustom1.xib in Resources */,
 				EE3EBACD229A34E90073F3AF /* AdvancePopup1.xib in Resources */,
@@ -973,6 +988,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049A9E7122AFB4E80053AC8A /* basicCell3.swift in Sources */,
 				049A9E1522AA59490053AC8A /* UploadButton1.swift in Sources */,
 				041074F52293CCD100BE0F51 /* AutoTextFields.swift in Sources */,
 				041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */,
