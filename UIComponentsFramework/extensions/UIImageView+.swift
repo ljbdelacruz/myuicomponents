@@ -29,4 +29,10 @@ extension UIImageView{
 //        let decodedimage:UIImage = UIImage(data: dataDecoded)!
 //        yourImageView.image = decodedimage
     }
+    //setting up tapRecognizer
+//    public func setUIRecognizer(selector:Selector?){
+//        let recog = UITapGestureRecognizer(target: self, action:selector!);
+//        self.addGestureRecognizer(recog);
+//    }
+    
 }

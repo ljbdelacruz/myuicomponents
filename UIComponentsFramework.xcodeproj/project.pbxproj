@@ -48,6 +48,10 @@
 		049A9E3422AE49D40053AC8A /* twoEventTF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3322AE49D40053AC8A /* twoEventTF1.swift */; };
 		049A9E3822AE56050053AC8A /* RoundedButtonDesign1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E3722AE56050053AC8A /* RoundedButtonDesign1.xib */; };
 		049A9E3A22AE563A0053AC8A /* RoundedButtonDesign1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */; };
+		049A9E3D22AF43410053AC8A /* AdsTitle1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E3C22AF43410053AC8A /* AdsTitle1.xib */; };
+		049A9E3F22AF445C0053AC8A /* AdsTitle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E3E22AF445C0053AC8A /* AdsTitle1.swift */; };
+		049A9E4222AF5BA20053AC8A /* AdsDescription1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E4122AF5BA20053AC8A /* AdsDescription1.xib */; };
+		049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -122,6 +126,10 @@
 		049A9E3322AE49D40053AC8A /* twoEventTF1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoEventTF1.swift; sourceTree = "<group>"; };
 		049A9E3722AE56050053AC8A /* RoundedButtonDesign1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedButtonDesign1.xib; sourceTree = "<group>"; };
 		049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonDesign1.swift; sourceTree = "<group>"; };
+		049A9E3C22AF43410053AC8A /* AdsTitle1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsTitle1.xib; sourceTree = "<group>"; };
+		049A9E3E22AF445C0053AC8A /* AdsTitle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsTitle1.swift; sourceTree = "<group>"; };
+		049A9E4122AF5BA20053AC8A /* AdsDescription1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsDescription1.xib; sourceTree = "<group>"; };
+		049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsDescription1.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,6 +330,8 @@
 		0410754D2294F1A900BE0F51 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				049A9E4022AF5B920053AC8A /* AdsDescription1 */,
+				049A9E3B22AF43280053AC8A /* AdsTitle1 */,
 				EE3EBABF2298E6B30073F3AF /* AdsContent2 */,
 				0410754E2294F1B000BE0F51 /* AdsContent1 */,
 			);
@@ -422,6 +432,24 @@
 				049A9E3922AE563A0053AC8A /* RoundedButtonDesign1.swift */,
 			);
 			path = RoundedButtonDesign1;
+			sourceTree = "<group>";
+		};
+		049A9E3B22AF43280053AC8A /* AdsTitle1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E3C22AF43410053AC8A /* AdsTitle1.xib */,
+				049A9E3E22AF445C0053AC8A /* AdsTitle1.swift */,
+			);
+			path = AdsTitle1;
+			sourceTree = "<group>";
+		};
+		049A9E4022AF5B920053AC8A /* AdsDescription1 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9E4122AF5BA20053AC8A /* AdsDescription1.xib */,
+				049A9E4322AF5BB60053AC8A /* AdsDescription1.swift */,
+			);
+			path = AdsDescription1;
 			sourceTree = "<group>";
 		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
@@ -760,10 +788,12 @@
 				EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */,
 				049A9E1922AA599A0053AC8A /* UploadButton1.xib in Resources */,
 				041074E72293B4E700BE0F51 /* Toolbar1.xib in Resources */,
+				049A9E4222AF5BA20053AC8A /* AdsDescription1.xib in Resources */,
 				041074CF2293903600BE0F51 /* myProgressHUDBasic.xib in Resources */,
 				041074F32293CBFC00BE0F51 /* readme.md in Resources */,
 				041075002293D65500BE0F51 /* Content1View.xib in Resources */,
 				EE3EBAE022A004A70073F3AF /* Gmaps1View.xib in Resources */,
+				049A9E3D22AF43410053AC8A /* AdsTitle1.xib in Resources */,
 				EE3EBADA229A8DBD0073F3AF /* basicCell2.xib in Resources */,
 				041074EC2293B52800BE0F51 /* Assets.xcassets in Resources */,
 				049A9E2022AE0FF10053AC8A /* RatingsCustom1.xib in Resources */,
@@ -859,6 +889,7 @@
 				0472FDF82297BB2D00C72FDF /* ViewButtonMenu1.swift in Sources */,
 				EEF07DCB22ACB40C00D9EBB6 /* MenuButton1.swift in Sources */,
 				EE3EBABE229843050073F3AF /* card1View.swift in Sources */,
+				049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */,
 				EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
@@ -867,6 +898,7 @@
 				EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */,
 				049A9E3A22AE563A0053AC8A /* RoundedButtonDesign1.swift in Sources */,
 				041074E92293B4F400BE0F51 /* Toolbar1.swift in Sources */,
+				049A9E3F22AF445C0053AC8A /* AdsTitle1.swift in Sources */,
 				049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

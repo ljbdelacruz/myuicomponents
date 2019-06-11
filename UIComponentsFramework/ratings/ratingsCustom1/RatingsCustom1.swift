@@ -26,6 +26,14 @@ public class RatingsCustom1: UIView {
     @IBOutlet weak var imgStar5: UIImageView!
     @IBOutlet weak var descLabel: UILabel!
     public var ratings:Int=0;
+    public var event: (() -> Void)?{
+        didSet{
+            contentview.setUIRecognizer(selector: #selector(onClick))
+        }
+    }
+    
+    
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -49,9 +57,6 @@ public class RatingsCustom1: UIView {
 }
 
 extension RatingsCustom1{
-    func setClickListener(){
-        contentview.setUIRecognizer(selector: #selector(onClick))
-    }
     @objc
     func onClick(){
         handler!.onClick();
