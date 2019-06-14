@@ -19,8 +19,6 @@ public class PromotionCCell1: UICollectionViewCell {
             self.mytitle.text=vm!.label;
         }
     }
-    
-    
     override public func awakeFromNib() {
         super.awakeFromNib()
     }

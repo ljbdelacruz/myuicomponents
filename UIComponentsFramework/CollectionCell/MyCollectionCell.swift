@@ -12,6 +12,5 @@ public class MyCollectionCell{
     public var imageBase64:String="";
     public var imageSrc:String="";
     public var label:String="";
-    public init(){
-    }
+    public init(){}
 }
