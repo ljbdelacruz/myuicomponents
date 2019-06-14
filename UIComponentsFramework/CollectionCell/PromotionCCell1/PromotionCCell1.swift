@@ -13,7 +13,7 @@ public class PromotionCCell1: UICollectionViewCell {
     public static let nibname:String="promotionCCell1";
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytitle: UILabel!
-
+    
     override public func awakeFromNib() {
         super.awakeFromNib()
     }
