@@ -10,13 +10,15 @@ import Foundation
 
 
 public class ImageBaseCacher{
-    public func cacheImage(url:String, image:UIImage){
+    //sends the id and the image you want to transform into base64 to be stored locally
+    public func cacheImage(id:String, image:UIImage){
         let defaults = UserDefaults.standard;
-        defaults.set(UiUtil.imageToBase64(image: image), forKey: url)
+        defaults.set(UiUtil.imageToBase64(image: image), forKey: id)
     }
-    public func retrieveImage(url:String)-> UIImage{
+    //retrieve the image locally from base64 to UIImage to be displayed into your app
+    public func retrieveImage(id:String)-> UIImage{
         let defaults = UserDefaults.standard;
-        return  UiUtil.base64ToUIImage(base64:defaults.value(forKey: url) as! String);
+        return  UiUtil.base64ToUIImage(base64:defaults.value(forKey: id) as! String);
     }
     
 }
