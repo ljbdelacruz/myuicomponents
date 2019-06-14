@@ -68,6 +68,8 @@
 		049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */; };
 		049A9E6F22AFB4180053AC8A /* basicCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9E6E22AFB4180053AC8A /* basicCell3.xib */; };
 		049A9E7122AFB4E80053AC8A /* basicCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E7022AFB4E80053AC8A /* basicCell3.swift */; };
+		049A9EE222B345210053AC8A /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9EE122B345210053AC8A /* MyCollectionCell.swift */; };
+		049A9EE522B362CC0053AC8A /* ImageBaseCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9EE422B362CC0053AC8A /* ImageBaseCacher.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -162,6 +164,8 @@
 		049A9E6B22AFB2190053AC8A /* PromotionCCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCCell1.swift; sourceTree = "<group>"; };
 		049A9E6E22AFB4180053AC8A /* basicCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell3.xib; sourceTree = "<group>"; };
 		049A9E7022AFB4E80053AC8A /* basicCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicCell3.swift; sourceTree = "<group>"; };
+		049A9EE122B345210053AC8A /* MyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
+		049A9EE422B362CC0053AC8A /* ImageBaseCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBaseCacher.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				041074CA22938FA500BE0F51 /* UiUtil.swift */,
+				049A9EE422B362CC0053AC8A /* ImageBaseCacher.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 			isa = PBXGroup;
 			children = (
 				049A9E6822AFB0CC0053AC8A /* PromotionCCell1 */,
+				049A9EE122B345210053AC8A /* MyCollectionCell.swift */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -1027,8 +1033,10 @@
 				049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */,
 				EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */,
 				049A9E4E22AF93190053AC8A /* transactionCell1TV.swift in Sources */,
+				049A9EE222B345210053AC8A /* MyCollectionCell.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
+				049A9EE522B362CC0053AC8A /* ImageBaseCacher.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
 				EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */,
@@ -1176,7 +1184,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1210,7 +1218,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				DEVELOPMENT_TEAM = FTF953N9JJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

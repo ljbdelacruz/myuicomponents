@@ -13,6 +13,13 @@ public class PromotionCCell1: UICollectionViewCell {
     public static let nibname:String="promotionCCell1";
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytitle: UILabel!
+    public var vm:PromotionCCellVM? {
+        didSet{
+            self.myimage.image = UiUtil.urlToImage(url: vm!.imageSrc);
+            self.mytitle.text=vm!.label;
+        }
+    }
+    
     
     override public func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +27,9 @@ public class PromotionCCell1: UICollectionViewCell {
     public func toggleVisibility(){
         self.mytitle.isHidden = !self.mytitle.isHidden;
     }
-    
+}
+
+
+public class PromotionCCellVM:MyCollectionCell{
     
 }
