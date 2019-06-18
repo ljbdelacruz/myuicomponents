@@ -24,13 +24,13 @@ public class containerDesign1View: UIView {
         contentview.fixInView(self)
     }
     public func setContentColor(color:UIColor){
-        if self.contentview != nil {
-            self.contentview.backgroundColor=color;
+        if self != nil {
+            self.backgroundColor=color;
         }
     }
     public func setRadius(corner:UIRectCorner, radius:CGFloat){
-        if self.contentview != nil{
-            self.contentview.roundCorners(corners: corner, radius: radius)
+        if self != nil{
+            self.roundCorners(corners: corner, radius: radius)
         }
     }
     
