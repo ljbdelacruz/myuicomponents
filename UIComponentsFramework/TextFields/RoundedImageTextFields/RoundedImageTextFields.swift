@@ -11,8 +11,8 @@ import UIKit
 public class RoundedImageTextFields: UIView {
     public let xibname:String="RoundedImageTextFields";
     @IBOutlet var contentview: UIView!
-    @IBOutlet weak var myimage: UIImageView!
-    @IBOutlet weak var mytextfield: UITextField!
+    @IBOutlet public weak var myimage: UIImageView!
+    @IBOutlet public weak var mytextfield: UITextField!
     
     override public init(frame: CGRect){
         super.init(frame: frame)

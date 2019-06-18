@@ -70,6 +70,10 @@
 		049A9E7122AFB4E80053AC8A /* basicCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9E7022AFB4E80053AC8A /* basicCell3.swift */; };
 		049A9EE222B345210053AC8A /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9EE122B345210053AC8A /* MyCollectionCell.swift */; };
 		049A9EE522B362CC0053AC8A /* ImageBaseCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9EE422B362CC0053AC8A /* ImageBaseCacher.swift */; };
+		049A9F0422B874360053AC8A /* ContainerDesign1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9F0322B874360053AC8A /* ContainerDesign1.xib */; };
+		049A9F0822B874910053AC8A /* containerDesign1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9F0722B874910053AC8A /* containerDesign1View.swift */; };
+		049A9F8122B8B3D00053AC8A /* basicCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A9F8022B8B3D00053AC8A /* basicCell4.xib */; };
+		049A9F8322B8B3E90053AC8A /* basicCell4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9F8222B8B3E90053AC8A /* basicCell4TableViewCell.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
@@ -166,6 +170,10 @@
 		049A9E7022AFB4E80053AC8A /* basicCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicCell3.swift; sourceTree = "<group>"; };
 		049A9EE122B345210053AC8A /* MyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
 		049A9EE422B362CC0053AC8A /* ImageBaseCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBaseCacher.swift; sourceTree = "<group>"; };
+		049A9F0322B874360053AC8A /* ContainerDesign1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerDesign1.xib; sourceTree = "<group>"; };
+		049A9F0722B874910053AC8A /* containerDesign1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containerDesign1View.swift; sourceTree = "<group>"; };
+		049A9F8022B8B3D00053AC8A /* basicCell4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = basicCell4.xib; sourceTree = "<group>"; };
+		049A9F8222B8B3E90053AC8A /* basicCell4TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicCell4TableViewCell.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -571,6 +579,24 @@
 			path = basicCell3;
 			sourceTree = "<group>";
 		};
+		049A9F0122B874080053AC8A /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				049A9F0322B874360053AC8A /* ContainerDesign1.xib */,
+				049A9F0722B874910053AC8A /* containerDesign1View.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		049A9F7F22B8B3BD0053AC8A /* basicCell4 */ = {
+			isa = PBXGroup;
+			children = (
+				049A9F8022B8B3D00053AC8A /* basicCell4.xib */,
+				049A9F8222B8B3E90053AC8A /* basicCell4TableViewCell.swift */,
+			);
+			path = basicCell4;
+			sourceTree = "<group>";
+		};
 		04DC39E5229BE27A0004D473 /* RoundedImageTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,6 +680,7 @@
 		EE3EBAD2229A8A410073F3AF /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				049A9F7F22B8B3BD0053AC8A /* basicCell4 */,
 				049A9E6D22AFB4070053AC8A /* basicCell3 */,
 				049A9E6122AFA2960053AC8A /* PointsCell1 */,
 				049A9E5A22AF9DA50053AC8A /* buttonCell1 */,
@@ -745,6 +772,7 @@
 		EEB7A2062290E31C00A0C3F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				049A9F0122B874080053AC8A /* Container */,
 				049A9E3522AE55E50053AC8A /* Design */,
 				049A9E2322AE2BD90053AC8A /* UserDisplay */,
 				EE3EBADD22A0046A0073F3AF /* GoogleMaps */,
@@ -901,6 +929,7 @@
 				EE3EBAC6229939CB0073F3AF /* ToolBar2View.xib in Resources */,
 				0472FDF62297B93A00C72FDF /* ViewButtonMenu1.xib in Resources */,
 				04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */,
+				049A9F0422B874360053AC8A /* ContainerDesign1.xib in Resources */,
 				049A9E6F22AFB4180053AC8A /* basicCell3.xib in Resources */,
 				049A9E5322AF94F20053AC8A /* cardCell1.xib in Resources */,
 				049A9E2622AE2CD60053AC8A /* UserDisplayCustom1.xib in Resources */,
@@ -913,6 +942,7 @@
 				049A9E6A22AFB0E30053AC8A /* promotionCCell1.xib in Resources */,
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
 				EE3EBAC12298E6D60073F3AF /* AdsContent2View.xib in Resources */,
+				049A9F8122B8B3D00053AC8A /* basicCell4.xib in Resources */,
 				049A9E4722AF83540053AC8A /* AdsTemplate1.xib in Resources */,
 				041074F82293D02000BE0F51 /* OTP4DigitView.xib in Resources */,
 				EEF07DCE22ACD8D700D9EBB6 /* CreditsDisplayButton1.xib in Resources */,
@@ -995,6 +1025,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A9E7122AFB4E80053AC8A /* basicCell3.swift in Sources */,
+				049A9F8322B8B3E90053AC8A /* basicCell4TableViewCell.swift in Sources */,
 				049A9E1522AA59490053AC8A /* UploadButton1.swift in Sources */,
 				041074F52293CCD100BE0F51 /* AutoTextFields.swift in Sources */,
 				041075522294F2F000BE0F51 /* AdsContent1.swift in Sources */,
@@ -1041,6 +1072,7 @@
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
 				EEF07DC322ABF85200D9EBB6 /* t3ImageDisplay.swift in Sources */,
 				049A9E3A22AE563A0053AC8A /* RoundedButtonDesign1.swift in Sources */,
+				049A9F0822B874910053AC8A /* containerDesign1View.swift in Sources */,
 				041074E92293B4F400BE0F51 /* Toolbar1.swift in Sources */,
 				049A9E3F22AF445C0053AC8A /* AdsTitle1.swift in Sources */,
 				049A9E1B22AA5C1F0053AC8A /* Button+.swift in Sources */,
@@ -1157,6 +1189,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1169,7 +1202,7 @@
 				OTHER_CFLAGS = "-fembed-bitcode";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1193,6 +1226,7 @@
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks",
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks/GoogleMaps/Maps/Frameworks",
 				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1204,7 +1238,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.UIComponentsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1227,6 +1261,7 @@
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks",
 					"$(PROJECT_DIR)/UIComponentsFramework/sdks/GoogleMaps/Maps/Frameworks",
 				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = UIComponentsFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1238,6 +1273,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.UIComponentsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
