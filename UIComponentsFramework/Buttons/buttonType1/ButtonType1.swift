@@ -12,6 +12,8 @@ public class ButtonType1: UIView {
     public let xibname:String="ButtonType1";
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var mytitle: UILabel!
+    
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -23,6 +25,12 @@ public class ButtonType1: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
+        self.setUI()
+    }
+    
+    
+    public func setUI(){
+        self.setupRadius(bgColor: UIColor.mytransparent(), radius: 20);
     }
     
     
