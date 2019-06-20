@@ -1,16 +1,17 @@
 //
-//  containerDesign1View.swift
+//  ButtonType1.swift
 //  UIComponentsFramework
 //
-//  Created by devops on 18/06/2019.
+//  Created by devops on 20/06/2019.
 //  Copyright © 2019 Lainel John Dela Cruz. All rights reserved.
 //
 
 import UIKit
 
-public class containerDesign1View: UIView {
-    public let xibname:String="ContainerDesign1";
+public class ButtonType1: UIView {
+    public let xibname:String="ButtonType1";
     @IBOutlet var contentview: UIView!
+    @IBOutlet weak var mytitle: UILabel!
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -23,15 +24,6 @@ public class containerDesign1View: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
-    public func setContentColor(color:UIColor){
-        if self != nil {
-            self.backgroundColor=color;
-        }
-    }
-    public func setRadius(corner:UIRectCorner, radius:CGFloat){
-        if self != nil{
-            self.roundCorners(corners: corner, radius: radius)
-        }
-    }
+    
     
 }

@@ -13,6 +13,13 @@ public class RoundedImageTextFields: UIView {
     @IBOutlet var contentview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytextfield: UITextField!
+    public var myvm:RoundedImageTFVM?{
+        didSet{
+            self.mytextfield.text=myvm!.text != nil && myvm!.text!.count > 0 ? myvm!.text! : "";
+            self.mytextfield.placeholder=myvm!.placeholder! != nil && myvm!.placeholder!.count > 0 ? myvm!.placeholder! : "";
+            self.myimage.image=myvm!.image!.count != nil &&  myvm!.image!.count > 0 ? UIImage(named: myvm!.image!) : nil;
+        }
+    }
     
     override public init(frame: CGRect){
         super.init(frame: frame)
@@ -33,7 +40,26 @@ public class RoundedImageTextFields: UIView {
         mytextfield.backgroundColor=UIColor.white;
         mytextfield.textColor=UiUtil.hexStringToUIColor(hex: "B9B9B9");
         mytextfield.layer.borderWidth=0;
-        mytextfield.layer.borderColor=UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.0).cgColor;
+        mytextfield.layer.borderColor=UIColor.mytransparent().cgColor;
         mytextfield.changePlaceholderColor(color: UiUtil.hexStringToUIColor(hex: "B9B9B9"));
+    }
+    public func setSecureEntry(){
+        self.mytextfield.isSecureTextEntry=true;
+    }
+    public func setContainerTransparent(){
+        self.backgroundColor=UIColor.mytransparent();
+    }
+}
+
+public class RoundedImageTFVM{
+    public var image:String?;
+    public var placeholder:String?;
+    public var text:String?;
+    public init(){}
+    convenience public init(image:String, placeholder:String, text:String){
+        self.init();
+        self.image=image;
+        self.placeholder=placeholder;
+        self.text=text;
     }
 }

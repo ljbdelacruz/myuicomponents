@@ -76,6 +76,9 @@
 		049A9F8322B8B3E90053AC8A /* basicCell4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A9F8222B8B3E90053AC8A /* basicCell4TableViewCell.swift */; };
 		04DC39E7229BE29F0004D473 /* RoundedImageTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */; };
 		04DC39E9229BE3290004D473 /* RoundedImageTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */; };
+		04DFE9BF22BB74FA003AC86A /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE9BE22BB74FA003AC86A /* UIColor+.swift */; };
+		04DFE9C222BB7975003AC86A /* ButtonType1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DFE9C122BB7975003AC86A /* ButtonType1.xib */; };
+		04DFE9C422BB79E6003AC86A /* ButtonType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE9C322BB79E6003AC86A /* ButtonType1.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
@@ -176,6 +179,9 @@
 		049A9F8222B8B3E90053AC8A /* basicCell4TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicCell4TableViewCell.swift; sourceTree = "<group>"; };
 		04DC39E6229BE29F0004D473 /* RoundedImageTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedImageTextFields.xib; sourceTree = "<group>"; };
 		04DC39E8229BE3290004D473 /* RoundedImageTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextFields.swift; sourceTree = "<group>"; };
+		04DFE9BE22BB74FA003AC86A /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		04DFE9C122BB7975003AC86A /* ButtonType1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonType1.xib; sourceTree = "<group>"; };
+		04DFE9C322BB79E6003AC86A /* ButtonType1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType1.swift; sourceTree = "<group>"; };
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 				0410754B2294F06500BE0F51 /* UITextView+.swift */,
 				049A9E1A22AA5C1F0053AC8A /* Button+.swift */,
 				049A9E2922AE35440053AC8A /* UIImageView+.swift */,
+				04DFE9BE22BB74FA003AC86A /* UIColor+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -606,6 +613,15 @@
 			path = RoundedImageTextFields;
 			sourceTree = "<group>";
 		};
+		04DFE9C022BB795F003AC86A /* buttonType1 */ = {
+			isa = PBXGroup;
+			children = (
+				04DFE9C122BB7975003AC86A /* ButtonType1.xib */,
+				04DFE9C322BB79E6003AC86A /* ButtonType1.swift */,
+			);
+			path = buttonType1;
+			sourceTree = "<group>";
+		};
 		64E2F4A0D51B0D35D1948A46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,6 +843,7 @@
 		EEF07DC422ACA2DC00D9EBB6 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				04DFE9C022BB795F003AC86A /* buttonType1 */,
 				049A9E2B22AE41D30053AC8A /* CategoryButton1 */,
 				EEF07DCC22ACD8AD00D9EBB6 /* CreditDisplayButton1 */,
 				0472FDF42297B92600C72FDF /* ViewButtonMenu1 */,
@@ -961,6 +978,7 @@
 				EE3EBABC22983B490073F3AF /* card1View.xib in Resources */,
 				EEF07DBF22ABF79C00D9EBB6 /* 3ImageDisplay.xib in Resources */,
 				EEF07DC922ACB2A900D9EBB6 /* MenuButtons1.xib in Resources */,
+				04DFE9C222BB7975003AC86A /* ButtonType1.xib in Resources */,
 				041074D9229399A700BE0F51 /* PopupBasic1.xib in Resources */,
 				049A9E3222AE46B40053AC8A /* twoEventTF1.xib in Resources */,
 				049A9E5922AF96DD0053AC8A /* cardCell2.xib in Resources */,
@@ -1053,6 +1071,7 @@
 				041074EF2293C7B500BE0F51 /* BackgroundImage.swift in Sources */,
 				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
 				049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */,
+				04DFE9C422BB79E6003AC86A /* ButtonType1.swift in Sources */,
 				049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */,
 				049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
@@ -1064,6 +1083,7 @@
 				049A9E4422AF5BB60053AC8A /* AdsDescription1.swift in Sources */,
 				EE3EBADC229A8E500073F3AF /* basic2TableViewCell.swift in Sources */,
 				049A9E4E22AF93190053AC8A /* transactionCell1TV.swift in Sources */,
+				04DFE9BF22BB74FA003AC86A /* UIColor+.swift in Sources */,
 				049A9EE222B345210053AC8A /* MyCollectionCell.swift in Sources */,
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
