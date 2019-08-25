@@ -52,8 +52,6 @@ extension ButtonType1{
         handler?.onButtonClick(tag: self.vm!.tag!)
     }
 }
-
-
 public class ButtonType1VM:ButtonVMBase{
     public var radius:CGFloat?;
 }

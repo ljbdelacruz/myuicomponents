@@ -8,15 +8,24 @@
 
 import UIKit
 
-public protocol RatingsCustomHandler{
+public protocol IRatingsCustom1{
     func onClick();
 }
 
 public class RatingsCustom1: UIView {
     public let xibname:String="RatingsCustom1";
-    private let imgFullStar:String="star";
-    private let imgHalfStar:String="half-star-shape";
-    public var handler:RatingsCustomHandler?;
+    var handler:IRatingsCustom1?;
+    var vm:RatingsCustom1VM?{
+        didSet{
+            self.descLabel.text=vm!.desc;
+            self.imgStar1.image=vm!.imageFullStar!;
+            self.imgStar2.image=vm!.imageFullStar!;
+            self.imgStar3.image=vm!.imageFullStar!;
+            self.imgStar4.image=vm!.imageFullStar!;
+            self.imgStar5.image=vm!.imageFullStar!;
+            self.setRatings();
+        }
+    }
     
     @IBOutlet var contentview: UIView!
     @IBOutlet weak var imgStar1: UIImageView!
@@ -25,14 +34,7 @@ public class RatingsCustom1: UIView {
     @IBOutlet weak var imgStar4: UIImageView!
     @IBOutlet weak var imgStar5: UIImageView!
     @IBOutlet weak var descLabel: UILabel!
-    public var ratings:Int=0;
-    public var event: (() -> Void)?{
-        didSet{
-            contentview.setUIRecognizer(selector: #selector(onClick))
-        }
-    }
-    
-    
+
     
     override public init(frame: CGRect){
         super.init(frame: frame)
@@ -47,18 +49,33 @@ public class RatingsCustom1: UIView {
         contentview.fixInView(self)
         self.setRatings();
     }
+    public func setup(vm:RatingsCustom1VM, handler:IRatingsCustom1){
+        self.vm=vm;
+        self.handler=handler;
+    }
+    
     public func setRatings(){
-        self.imgStar1.isHidden = self.ratings >= 1 ? false : true;
-        self.imgStar2.isHidden = self.ratings >= 2 ? false : true;
-        self.imgStar3.isHidden = self.ratings >= 3 ? false : true;
-        self.imgStar4.isHidden = self.ratings >= 4 ? false : true;
-        self.imgStar4.isHidden = self.ratings >= 5 ? false : true;
+        self.imgStar1.isHidden = self.vm!.ratings! >= 1 ? false : true;
+        self.imgStar2.isHidden = self.vm!.ratings! >= 2 ? false : true;
+        self.imgStar3.isHidden = self.vm!.ratings! >= 3 ? false : true;
+        self.imgStar4.isHidden = self.vm!.ratings! >= 4 ? false : true;
+        self.imgStar5.isHidden = self.vm!.ratings! >= 5 ? false : true;
     }
 }
 
 extension RatingsCustom1{
+    func setupTapRecognizer(){
+        contentview.setUIRecognizer(selector: #selector(onClick));
+    }
     @objc
     func onClick(){
         handler!.onClick();
     }
+}
+
+public class RatingsCustom1VM{
+    public var ratings:Int?;
+    public var desc:String?;
+    public var imageFullStar:UIImage? = UIImage(named:"star");
+    public var imageHalfStar:UIImage?=UIImage(named:"half-star-shape")
 }
