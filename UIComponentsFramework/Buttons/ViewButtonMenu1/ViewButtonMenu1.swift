@@ -56,7 +56,6 @@ extension ViewButtonMenu1{
         self.handler?.onButtonClick(tag: vm!.tag!);
     }
 }
-
 public class ViewButtonMenu1VM:ButtonVMBase{
     public var image:UIImage?;
 }

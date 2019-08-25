@@ -16,5 +16,19 @@ public class ButtonVMBase{
     public var tag:Int?;
     public var title:String?;
     public var textColor:UIColor?;
+    public var shadowModel:ShadowModel?;
 }
 
+public class ShadowModel{
+    public var radius:CGFloat?;
+    public var width:CGFloat?;
+    public var height:CGFloat?
+    public var opacity:Float?
+    
+    func set(radius:CGFloat, width:CGFloat, height:CGFloat, opacity:Float){
+        self.radius=radius;
+        self.width=width;
+        self.height=height;
+        self.opacity=opacity;
+    }
+}

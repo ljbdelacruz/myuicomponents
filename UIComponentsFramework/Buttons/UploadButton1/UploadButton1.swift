@@ -11,8 +11,6 @@ import UIKit
 public class UploadButton1: UIView {
     public let xibname:String="UploadButton1";
     @IBOutlet var contentview: UIView!
-    
-    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -24,7 +22,6 @@ public class UploadButton1: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
-        
     }
     
     
