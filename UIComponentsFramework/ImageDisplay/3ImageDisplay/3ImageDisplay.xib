@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="230" height="194"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="230" id="qaI-QN-wr4"/>
-                        <constraint firstAttribute="height" constant="194" id="qaz-CH-ZQR"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qaz-CH-ZQR"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-dx-tYB">

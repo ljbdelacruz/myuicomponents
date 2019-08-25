@@ -8,19 +8,26 @@
 
 import UIKit
 
+public protocol IMenuButton1:IButton{
+    
+}
+
 public class MenuButton1: UIView {
     public let xibname:String="MenuButtons1";
-    
     @IBOutlet var contentview: UIView!
     @IBOutlet public weak var leftLogo: UIImageView!
     @IBOutlet public weak var rightLogo: UIImageView!
     @IBOutlet public weak var mylabel: UILabel!
-    public var eventOnClick: (() -> Void)?{
+    var vm:MenuButton1VM?{
         didSet{
-            self.setupTapRecognizer();
+            self.leftLogo.image=vm?.leftLogo
+            self.rightLogo.image=vm?.rightLogo
+            self.mylabel.text=vm?.title;
+            self.mylabel.textColor=vm?.textColor ?? UIColor.white;
+            self.contentview.tag=vm!.tag!;
         }
     }
-    
+    var handler:IMenuButton1?
     
     override public init(frame: CGRect){
         super.init(frame: frame)
@@ -34,6 +41,13 @@ public class MenuButton1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
+    
+    //set this on the callers
+    public func set(vm:MenuButton1VM, handler:IMenuButton1){
+        self.handler=handler;
+        self.vm=vm;
+    }
+    
 }
 //MARK: click handler
 
@@ -47,7 +61,12 @@ extension MenuButton1{
     }
     @objc
     func onClick(){
-        eventOnClick?();
+        self.handler?.onButtonClick(tag: self.contentview.tag);
     }
+}
+
+public class MenuButton1VM:ButtonVMBase{
+    public var leftLogo:UIImage?;
+    public var rightLogo:UIImage?;
 }
 

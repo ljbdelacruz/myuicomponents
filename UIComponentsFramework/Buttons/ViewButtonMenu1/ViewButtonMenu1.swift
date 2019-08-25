@@ -7,30 +7,30 @@
 //
 
 import UIKit
+public protocol IViewButtonMenu1:IButton{
+}
+
 public class ViewButtonMenu1: UIView {
     public let xibname:String="ViewButtonMenu1";
     @IBOutlet public var containerview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var myDesc: UITextView!
-    public var eventOnClick: (() -> Void)? {
+    var vm:ViewButtonMenu1VM?{
         didSet{
-            self.setupGestures();
+            self.containerview.backgroundColor=vm?.contentColor ?? UIColor.mytransparent();
+            self.myimage.image=vm?.image;
+            self.myDesc.text=vm?.title;
+            self.myDesc.adjustTextView();
+            self.myDesc.textColor=vm?.textColor ?? UIColor.white;
         }
     }
+    var handler:IViewButtonMenu1?;
     
-    public var titleDesc:String {
-        didSet{
-            myDesc.text = titleDesc;
-            myDesc.adjustTextView()
-        }
-    }
     override public init(frame: CGRect){
-        self.titleDesc="";
         super.init(frame: frame)
         commonInit()
     }
     required public init?(coder aDecoder: NSCoder) {
-        self.titleDesc="";
         super.init(coder: aDecoder)
         commonInit()
     }
@@ -38,9 +38,11 @@ public class ViewButtonMenu1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         containerview.fixInView(self)
     }
-    public func setupAdjust(){
-        myDesc.adjustTextView()
+    func setup(vm:ViewButtonMenu1VM, handler:IViewButtonMenu1){
+        self.vm=vm;
+        self.handler=handler;
     }
+    
 }
 extension ViewButtonMenu1{
     func getRecog()->UITapGestureRecognizer{
@@ -51,6 +53,10 @@ extension ViewButtonMenu1{
         self.containerview.addGestureRecognizer(self.getRecog());
     }
     @objc func onClick(){
-        eventOnClick?();
+        self.handler?.onButtonClick(tag: vm!.tag!);
     }
+}
+
+public class ViewButtonMenu1VM:ButtonVMBase{
+    public var image:UIImage?;
 }

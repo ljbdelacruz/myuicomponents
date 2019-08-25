@@ -79,6 +79,9 @@
 		04DFE9BF22BB74FA003AC86A /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE9BE22BB74FA003AC86A /* UIColor+.swift */; };
 		04DFE9C222BB7975003AC86A /* ButtonType1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DFE9C122BB7975003AC86A /* ButtonType1.xib */; };
 		04DFE9C422BB79E6003AC86A /* ButtonType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE9C322BB79E6003AC86A /* ButtonType1.swift */; };
+		EE08A84623113C6F00AAB09E /* CameraComponent in Resources */ = {isa = PBXBuildFile; fileRef = EE08A84423113C6F00AAB09E /* CameraComponent */; };
+		EE08A84723113C6F00AAB09E /* QRScannerView in Resources */ = {isa = PBXBuildFile; fileRef = EE08A84523113C6F00AAB09E /* QRScannerView */; };
+		EE08A85D2312B9EA00AAB09E /* ButtonBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
@@ -185,9 +188,11 @@
 		3676F35252DAB90CCEBBC8D1 /* Pods_UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E02487FE4EF986314D51171 /* Pods-UIComponentsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
+		EE08A84423113C6F00AAB09E /* CameraComponent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CameraComponent; sourceTree = "<group>"; };
+		EE08A84523113C6F00AAB09E /* QRScannerView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QRScannerView; sourceTree = "<group>"; };
+		EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBase.swift; sourceTree = "<group>"; };
 		EE3EBA3A229419E50073F3AF /* Content3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content3View.xib; sourceTree = "<group>"; };
 		EE3EBA3C22941A500073F3AF /* Content3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content3View.swift; sourceTree = "<group>"; };
-		EE3EBA7A2296D54B0073F3AF /* UIComponentsFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UIComponentsFramework copy-Info.plist"; path = "/Users/laineljohndelacruz/Desktop/GithubRepo/personal/UIComponentsFramework/UIComponentsFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		EE3EBABB22983B490073F3AF /* card1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = card1View.xib; sourceTree = "<group>"; };
 		EE3EBABD229843050073F3AF /* card1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card1View.swift; sourceTree = "<group>"; };
 		EE3EBAC02298E6D60073F3AF /* AdsContent2View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsContent2View.xib; sourceTree = "<group>"; };
@@ -639,6 +644,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE08A84223113B4D00AAB09E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A84423113C6F00AAB09E /* CameraComponent */,
+				EE08A84523113C6F00AAB09E /* QRScannerView */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		EE3EBA39229419C70073F3AF /* Content3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,7 +766,6 @@
 				EEB7A1FC2290E30600A0C3F2 /* Products */,
 				64E2F4A0D51B0D35D1948A46 /* Pods */,
 				AAD409EDFC4A39C6654EEB1C /* Frameworks */,
-				EE3EBA7A2296D54B0073F3AF /* UIComponentsFramework copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -767,6 +780,7 @@
 		EEB7A1FD2290E30600A0C3F2 /* UIComponentsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EE08A84223113B4D00AAB09E /* Camera */,
 				049A9E6722AFB0C40053AC8A /* CollectionCell */,
 				049A9E1D22AE0FCE0053AC8A /* ratings */,
 				041074D22293909C00BE0F51 /* extensions */,
@@ -849,6 +863,7 @@
 				0472FDF42297B92600C72FDF /* ViewButtonMenu1 */,
 				EEF07DC522ACA31100D9EBB6 /* MenuButtons1 */,
 				049A9E1322AA592D0053AC8A /* UploadButton1 */,
+				EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -953,8 +968,10 @@
 				EE3EBACD229A34E90073F3AF /* AdvancePopup1.xib in Resources */,
 				EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */,
 				049A9E2D22AE41E40053AC8A /* CategoryButton1.xib in Resources */,
+				EE08A84623113C6F00AAB09E /* CameraComponent in Resources */,
 				041075052293D85E00BE0F51 /* Content2View.xib in Resources */,
 				EEB7A20B2290E36600A0C3F2 /* view1.xib in Resources */,
+				EE08A84723113C6F00AAB09E /* QRScannerView in Resources */,
 				041075502294F1C100BE0F51 /* AdsContent1.xib in Resources */,
 				049A9E6A22AFB0E30053AC8A /* promotionCCell1.xib in Resources */,
 				EE3EBAD5229A8BEF0073F3AF /* basicCell1.xib in Resources */,
@@ -1072,6 +1089,7 @@
 				EEF07DD022ACD93500D9EBB6 /* CreditDisplayButton1.swift in Sources */,
 				049A9E6C22AFB2190053AC8A /* PromotionCCell1.swift in Sources */,
 				04DFE9C422BB79E6003AC86A /* ButtonType1.swift in Sources */,
+				EE08A85D2312B9EA00AAB09E /* ButtonBase.swift in Sources */,
 				049A9E6022AF9F670053AC8A /* cardCell1TableViewCell.swift in Sources */,
 				049A9E2A22AE35440053AC8A /* UIImageView+.swift in Sources */,
 				EEB7A2092290E35800A0C3F2 /* view1component.swift in Sources */,
@@ -1237,7 +1255,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1272,7 +1290,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FTF953N9JJ;
+				DEVELOPMENT_TEAM = 93CXP6R5M8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

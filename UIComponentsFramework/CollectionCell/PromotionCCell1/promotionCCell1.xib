@@ -22,8 +22,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tY-Xa-DcB">
                         <rect key="frame" x="0.0" y="0.0" width="371" height="157"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="157" id="FZJ-ih-JDL"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="371" id="zNb-64-Xsw"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="FZJ-ih-JDL"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="zNb-64-Xsw"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4e-HY-skC">

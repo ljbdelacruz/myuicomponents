@@ -14,13 +14,18 @@ public class CategoryButton1: UIView {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var descTitle: UILabel!
     @IBOutlet weak var subDesc: UILabel!
+    public var vm:CategoryButton1VM?{
+        didSet{
+            self.myImage.image=vm?.image;
+            self.descTitle.text=vm?.descTitle;
+            self.subDesc.text=vm?.subDesc;
+        }
+    };
     public var eventOnClick: (() -> Void)?{
         didSet{
             self.setupTapRecognizer();
         }
     }
-    
-    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -33,13 +38,8 @@ public class CategoryButton1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
-    
-    public func setImage(image:UIImage){
-        self.myImage.image=image;
-    }
-    public func setDesc(desc:String, subDesc:String){
-        self.descTitle.text=desc;
-        self.subDesc.text=subDesc;
+    func setVM(vm:CategoryButton1VM){
+        self.vm=vm;
     }
 }
 //MARK: set recognizer
@@ -51,4 +51,10 @@ extension CategoryButton1{
     func onClick(){
         eventOnClick?();
     }
+}
+
+public class CategoryButton1VM{
+    public var image:UIImage?;
+    public var descTitle:String?
+    public var subDesc:String?
 }
