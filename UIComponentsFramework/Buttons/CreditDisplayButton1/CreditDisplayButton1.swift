@@ -42,11 +42,24 @@ public class CreditDisplayButton1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
+    //set vm
     func setup(vm:CreditDisplayButton1VM, handler:ICreditDisplayButton1){
         self.vm=vm;
         self.handler=handler;
+        self.setupGestures();
     }
 }
+//MARK: Tap gesture setup
+extension CreditDisplayButton1{
+    func setupGestures(){
+        self.contentview.setUIRecognizer(selector: #selector(onClick))
+    }
+    @objc func onClick(){
+        self.handler?.onButtonClick(tag: vm!.tag!);
+    }
+}
+
+
 public class CreditDisplayButton1VM:ButtonVMBase{
     public var subDesc:String?
     public var corners:UIRectCorner?=[.bottomRight, .topRight]

@@ -8,6 +8,9 @@
 
 import UIKit
 
+public protocol IButtonType1:IButton{
+}
+
 public class ButtonType1: UIView {
     public let xibname:String="ButtonType1";
     @IBOutlet var contentview: UIView!
@@ -17,8 +20,11 @@ public class ButtonType1: UIView {
             self.contentview.backgroundColor=vm!.contentColor ?? UIColor.white;
             self.mytitle.text=vm!.title;
             self.mytitle.textColor=vm!.textColor ?? UIColor.white;
+            self.contentview.setupRadius(bgColor: vm!.contentColor!, radius: vm!.radius!)
         }
     }
+    var handler:IButtonType1?;
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -32,15 +38,22 @@ public class ButtonType1: UIView {
         contentview.fixInView(self)
     }
     //initialize this on the component on where you wanna use
-    public func setUI(vm:ButtonType1VM){
+    public func setup(vm:ButtonType1VM, handler:IButtonType1){
         self.vm=vm;
-        self.setupRadius(bgColor: UIColor.mytransparent(), radius: 20);
+        self.handler=handler;
+    }
+}
+extension ButtonType1{
+    func setupTapRecognizer(){
+        contentview.setUIRecognizer(selector: #selector(onClick));
+    }
+    @objc
+    func onClick(){
+        handler?.onButtonClick(tag: self.vm!.tag!)
     }
 }
 
-public class ButtonType1VM{
-    public var contentColor:UIColor?;
-    public var title:String?
-    public var textColor:UIColor?
-    
+
+public class ButtonType1VM:ButtonVMBase{
+    public var radius:CGFloat?;
 }

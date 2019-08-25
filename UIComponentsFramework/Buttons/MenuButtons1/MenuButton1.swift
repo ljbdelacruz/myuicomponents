@@ -46,18 +46,15 @@ public class MenuButton1: UIView {
     public func set(vm:MenuButton1VM, handler:IMenuButton1){
         self.handler=handler;
         self.vm=vm;
+        self.setupTapRecognizer()
     }
     
 }
 //MARK: click handler
 
 extension MenuButton1{
-    public func getRecog()->UITapGestureRecognizer{
-        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
-        return recog;
-    }
     func setupTapRecognizer(){
-        contentview.addGestureRecognizer(self.getRecog());
+        self.contentview.setUIRecognizer(selector: #selector(onClick))
     }
     @objc
     func onClick(){

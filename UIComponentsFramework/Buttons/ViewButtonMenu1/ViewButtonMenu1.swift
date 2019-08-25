@@ -41,16 +41,13 @@ public class ViewButtonMenu1: UIView {
     func setup(vm:ViewButtonMenu1VM, handler:IViewButtonMenu1){
         self.vm=vm;
         self.handler=handler;
+        self.setupGestures();
     }
     
 }
 extension ViewButtonMenu1{
-    func getRecog()->UITapGestureRecognizer{
-        let recog = UITapGestureRecognizer(target: self, action: #selector(onClick))
-        return recog;
-    }
     func setupGestures(){
-        self.containerview.addGestureRecognizer(self.getRecog());
+        self.containerview.setUIRecognizer(selector: #selector(onClick))
     }
     @objc func onClick(){
         self.handler?.onButtonClick(tag: vm!.tag!);

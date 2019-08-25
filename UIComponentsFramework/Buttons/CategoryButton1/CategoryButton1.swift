@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+public protocol ICategoryButton1:IButton{
+}
+
 public class CategoryButton1: UIView {
     public let xibname:String="CategoryButton1";
     @IBOutlet var contentview: UIView!
@@ -17,15 +21,11 @@ public class CategoryButton1: UIView {
     public var vm:CategoryButton1VM?{
         didSet{
             self.myImage.image=vm?.image;
-            self.descTitle.text=vm?.descTitle;
+            self.descTitle.text=vm?.title;
             self.subDesc.text=vm?.subDesc;
         }
     };
-    public var eventOnClick: (() -> Void)?{
-        didSet{
-            self.setupTapRecognizer();
-        }
-    }
+    var handler:ICategoryButton1?;
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -38,8 +38,10 @@ public class CategoryButton1: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
-    func setVM(vm:CategoryButton1VM){
+    func setup(vm:CategoryButton1VM, handler:ICategoryButton1){
         self.vm=vm;
+        self.handler=handler;
+        self.setupTapRecognizer();
     }
 }
 //MARK: set recognizer
@@ -49,12 +51,11 @@ extension CategoryButton1{
     }
     @objc
     func onClick(){
-        eventOnClick?();
+        handler?.onButtonClick(tag: self.vm!.tag!)
     }
 }
 
-public class CategoryButton1VM{
+public class CategoryButton1VM:ButtonVMBase{
     public var image:UIImage?;
-    public var descTitle:String?
     public var subDesc:String?
 }
