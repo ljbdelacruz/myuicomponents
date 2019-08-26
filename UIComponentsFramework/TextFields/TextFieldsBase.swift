@@ -45,4 +45,5 @@ public class TextFieldBaseVMBorders{
 
 public protocol ITextFieldBase{
     func buttonOnClick(tag:Int)
+    func textDidChange(data:String)
 }

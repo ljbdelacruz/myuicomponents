@@ -11,7 +11,6 @@ import UIKit
 
 public protocol ItwoEventTF1:ITextFieldBase{
     func leftButtonOnClick(tag:Int)
-    func searchBarDidChange(data:String)
 }
 
 public class twoEventTF1: UIView {
@@ -66,7 +65,7 @@ extension twoEventTF1{
 extension twoEventTF1:UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let searchText  = contentInput.text! + string
-        self.handler?.searchBarDidChange(data: searchText)
+        self.handler?.textDidChange(data: searchText)
         self.vm?.text=searchText;
         return true
     }

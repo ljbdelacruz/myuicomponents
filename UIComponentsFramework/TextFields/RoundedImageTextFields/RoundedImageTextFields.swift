@@ -8,12 +8,18 @@
 
 import UIKit
 
+
+public protocol IRoundedImageTextFields:ITextFieldBase{
+    
+}
+
 public class RoundedImageTextFields: UIView {
     public let xibname:String="RoundedImageTextFields";
     @IBOutlet var contentview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytextfield: UITextField!
-    public var vm:RoundedImageTFVM?{
+    var handler:IRoundedImageTextFields?
+    var vm:RoundedImageTFVM?{
         didSet{
             self.mytextfield.text=vm!.text;
             self.mytextfield.backgroundColor=vm!.textDesign!.bgColor!
@@ -43,10 +49,21 @@ public class RoundedImageTextFields: UIView {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
     }
-    public func setup(vm:RoundedImageTFVM){
+    public func setup(vm:RoundedImageTFVM, handler:IRoundedImageTextFields){
         self.vm=vm;
+        self.handler=handler;
+        self.mytextfield.delegate=self;
     }
 }
+extension RoundedImageTextFields:UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let searchText  = mytextfield.text! + string
+        self.handler?.textDidChange(data: searchText)
+        self.vm?.text=searchText;
+        return true
+    }
+}
+
 
 public class RoundedImageTFVM:TextFieldsBaseVM{
     override init(){
