@@ -14,14 +14,22 @@ public class basic2TableViewCell: UITableViewCell {
     @IBOutlet var mytvcell: UITableViewCell!
     @IBOutlet weak var myimage: UIImageView!
     @IBOutlet weak var mytitle: UILabel!
-    
+    var vm:BaseTVCellVM?{
+        didSet{
+            self.myimage.image=vm!.image;
+            self.mytitle.text=vm!.title;
+            self.mytitle.textColor=vm!.titleColor;
+        }
+    }
     
     override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     override public func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(vm!.isSelected ?? false, animated: animated)
     }
-
+    public func setup(vm:BaseTVCellVM){
+        self.vm=vm;
+    }
 }

@@ -14,13 +14,25 @@ public class cardCell1: UITableViewCell {
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var cardName: UILabel!
     @IBOutlet public weak var cardNumber: UILabel!
-    
+    var vm:BaseTVCellVM?{
+        didSet{
+            self.myimage.image=vm!.image;
+            self.cardName.text=vm!.title;
+            self.cardName.textColor=vm!.titleColor;
+            self.cardNumber.text=vm!.subDesc;
+            self.cardNumber.textColor=vm!.subDescTextColor
+        }
+    }
     
     override public func awakeFromNib() {
         super.awakeFromNib()
     }
     override public func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(vm!.isSelected ?? false, animated: animated)
+    }
+    public func setup(vm:BaseTVCellVM){
+        self.vm=vm;
     }
 
 }
+
