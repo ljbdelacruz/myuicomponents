@@ -81,6 +81,7 @@
 		04DFE9C422BB79E6003AC86A /* ButtonType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE9C322BB79E6003AC86A /* ButtonType1.swift */; };
 		EE08A85D2312B9EA00AAB09E /* ButtonBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */; };
 		EE08A85F231348C900AAB09E /* baseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A85E231348C900AAB09E /* baseTVCell.swift */; };
+		EE08A8612313613800AAB09E /* TextFieldsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8602313613800AAB09E /* TextFieldsBase.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
@@ -189,6 +190,7 @@
 		E88ECB40F68A8461B7C3DFB0 /* Pods-UIComponentsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsFramework.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsFramework/Pods-UIComponentsFramework.release.xcconfig"; sourceTree = "<group>"; };
 		EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBase.swift; sourceTree = "<group>"; };
 		EE08A85E231348C900AAB09E /* baseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseTVCell.swift; sourceTree = "<group>"; };
+		EE08A8602313613800AAB09E /* TextFieldsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsBase.swift; sourceTree = "<group>"; };
 		EE3EBA3A229419E50073F3AF /* Content3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content3View.xib; sourceTree = "<group>"; };
 		EE3EBA3C22941A500073F3AF /* Content3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content3View.swift; sourceTree = "<group>"; };
 		EE3EBABB22983B490073F3AF /* card1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = card1View.xib; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				049A9E3022AE467F0053AC8A /* twoEventTF1 */,
 				04DC39E5229BE27A0004D473 /* RoundedImageTextFields */,
 				041074E32293B38400BE0F51 /* AutoTextFields */,
+				EE08A8602313613800AAB09E /* TextFieldsBase.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -1056,6 +1059,7 @@
 				EE3EBAC32298E6E60073F3AF /* AdsContent2View.swift in Sources */,
 				041074FC2293D33700BE0F51 /* UITextField+.swift in Sources */,
 				049A9E2F22AE43FB0053AC8A /* CategoryButton1.swift in Sources */,
+				EE08A8612313613800AAB09E /* TextFieldsBase.swift in Sources */,
 				049A9E6522AFA3DE0053AC8A /* PointsCell1.swift in Sources */,
 				049A9E2222AE11D50053AC8A /* RatingsCustom1.swift in Sources */,
 				049A9E2822AE31340053AC8A /* UserDisplayCustom1.swift in Sources */,

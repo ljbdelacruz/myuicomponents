@@ -24,11 +24,13 @@ public class ShadowModel{
     public var width:CGFloat?;
     public var height:CGFloat?
     public var opacity:Float?
-    
     func set(radius:CGFloat, width:CGFloat, height:CGFloat, opacity:Float){
         self.radius=radius;
         self.width=width;
         self.height=height;
         self.opacity=opacity;
+    }
+    func setView(view:UIView){
+        view.setMyShadow(radius: self.radius!, width: self.width!, height: self.height!, opacity: self.opacity!)
     }
 }

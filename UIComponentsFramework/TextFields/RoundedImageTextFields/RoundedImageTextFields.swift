@@ -13,14 +13,24 @@ public class RoundedImageTextFields: UIView {
     @IBOutlet var contentview: UIView!
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytextfield: UITextField!
-    public var myvm:RoundedImageTFVM?{
+    public var vm:RoundedImageTFVM?{
         didSet{
-            self.mytextfield.text=myvm!.text != nil && myvm!.text!.count > 0 ? myvm!.text! : "";
-            self.mytextfield.placeholder=myvm!.placeholder! != nil && myvm!.placeholder!.count > 0 ? myvm!.placeholder! : "";
-            self.myimage.image=myvm!.image!.count != nil &&  myvm!.image!.count > 0 ? UIImage(named: myvm!.image!) : nil;
+            self.mytextfield.text=vm!.text;
+            self.mytextfield.backgroundColor=vm!.textDesign!.bgColor!
+            self.mytextfield.textColor=vm!.textColor;
+            self.mytextfield.placeholder=vm!.placeholder;
+            self.mytextfield.layer.borderWidth=vm!.textDesign!.borderWidth!
+            self.mytextfield.layer.borderColor=vm!.textDesign!.borderColor!.cgColor
+            self.vm!.textDesign!.setPlaceholderColor(view: self.mytextfield);
+            self.myimage.image=vm!.image!;
+            self.vm!.borderRadius!.set(view: contentview);
+            vm!.textDesign!.shadow!.setView(view: contentview);
+            self.mytextfield.isSecureTextEntry=vm!.isSecureEntry!
+            if vm!.isContainerTransparent! {
+                self.backgroundColor=UIColor.mytransparent();
+            }
         }
     }
-    
     override public init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
@@ -32,34 +42,28 @@ public class RoundedImageTextFields: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
-        self.setDefault();
     }
-    public func setDefault(){
-        contentview.setupRadius(bgColor: UIColor.white, radius: 18);
-        contentview.setMyShadow(radius: 3.0, width: 1.0, height: 1.0, opacity: 0.1);
-        mytextfield.backgroundColor=UIColor.white;
-        mytextfield.textColor=UiUtil.hexStringToUIColor(hex: "B9B9B9");
-        mytextfield.layer.borderWidth=0;
-        mytextfield.layer.borderColor=UIColor.mytransparent().cgColor;
-        mytextfield.changePlaceholderColor(color: UiUtil.hexStringToUIColor(hex: "B9B9B9"));
-    }
-    public func setSecureEntry(){
-        self.mytextfield.isSecureTextEntry=true;
-    }
-    public func setContainerTransparent(){
-        self.backgroundColor=UIColor.mytransparent();
+    public func setup(vm:RoundedImageTFVM){
+        self.vm=vm;
     }
 }
 
-public class RoundedImageTFVM{
-    public var image:String?;
-    public var placeholder:String?;
-    public var text:String?;
-    public init(){}
-    convenience public init(image:String, placeholder:String, text:String){
-        self.init();
-        self.image=image;
-        self.placeholder=placeholder;
-        self.text=text;
+public class RoundedImageTFVM:TextFieldsBaseVM{
+    override init(){
+        super.init();
+        self.borderRadius=TextFieldBaseVMBorders();
+        self.borderRadius?.color=UIColor.white;
+        self.borderRadius?.radius=18;
+        self.textDesign=TextFieldDesignVM();
+        textDesign?.bgColor=UIColor.white;
+        textDesign?.color=UiUtil.hexStringToUIColor(hex: "B9B9B9");
+        textDesign?.borderColor=UIColor.mytransparent();
+        textDesign?.changePlaceholderColor=UiUtil.hexStringToUIColor(hex: "B9B9B9");
+        textDesign?.borderWidth=0;
+        textDesign?.shadow=ShadowModel();
+        textDesign?.shadow?.radius=3.0;
+        textDesign?.shadow?.width=1.0;
+        textDesign?.shadow?.height=1.0;
+        textDesign?.shadow?.opacity=0.1;
     }
 }
