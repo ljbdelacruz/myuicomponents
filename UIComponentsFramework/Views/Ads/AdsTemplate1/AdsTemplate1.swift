@@ -20,11 +20,14 @@ public class AdsTemplate1: UIView {
     @IBOutlet public weak var mySubDesc: UILabel!
     var handler:IAdsTemplate1?;
     
-    var vm:ViewsBaseVM?{
+    var vm:AdsTemplate1VM?{
         didSet{
             self.myimage.image=vm!.image;
             self.mytitle.text=vm!.title;
             self.mySubDesc.text=vm!.subDesc;
+            self.contentview.setupRadius(vm: vm!.contentDesign!)
+            self.contentview.setMyShadow(vm: vm!.contentDesign!.shadow!);
+            self.myimage.roundCorners(vm: vm!.imageDesign!)
         }
     }
     override public init(frame: CGRect){
@@ -38,14 +41,8 @@ public class AdsTemplate1: UIView {
     public func commonInit() {
         Bundle.main.loadNibNamed(xibname, owner: self, options: nil)
         contentview.fixInView(self)
-        //setting rounded corners
-        contentview.setupRadius(bgColor: UIColor.init(white: 0, alpha: 0), radius: 10);
-        //setting shadow 
-        contentview.setMyShadow(radius: 10, width: 1, height: 1, opacity: 1);
-        //setting image top rounded corners
-        myimage.roundCorners(corners: [.topLeft, .topRight], radius: 10);
     }
-    public func setup(vm:ViewsBaseVM, handler:IAdsTemplate1){
+    public func setup(vm:AdsTemplate1VM, handler:IAdsTemplate1){
         self.vm=vm;
         self.handler=handler;
         self.contentview.setUIRecognizer(selector: #selector(onClick))
@@ -56,5 +53,23 @@ extension AdsTemplate1{
     @objc
     func onClick(){
         self.handler?.onClick(tag: self.vm!.tag!);
+    }
+}
+
+public class AdsTemplate1VM:ViewsBaseVM{
+    public var imageDesign:ViewBaseDesignVM?;
+    override init(){
+        super.init();
+        self.contentDesign=ViewBaseDesignVM();
+        contentDesign?.borderColor=UIColor.init(white: 0, alpha: 0);
+        contentDesign?.borderRadius=10;
+        contentDesign?.shadow=ShadowModel();
+        contentDesign?.shadow?.radius=10;
+        contentDesign?.shadow?.width=1;
+        contentDesign?.shadow?.height=1;
+        contentDesign?.shadow?.opacity=1;
+        imageDesign=ViewBaseDesignVM();
+        imageDesign?.corners=[.topLeft, .topRight];
+        imageDesign?.cornerRadius=10;
     }
 }

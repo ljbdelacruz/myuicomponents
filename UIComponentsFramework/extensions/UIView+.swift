@@ -27,6 +27,10 @@ extension UIView
         self.layer.cornerRadius=radius;
         self.clipsToBounds = true
     }
+    public func setupRadius(vm:ViewBaseDesignVM){
+        self.setupRadius(bgColor: vm.borderColor!, radius: vm.borderRadius!)
+    }
+    
     //[.topLeft, .topRight]
     public func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
@@ -34,6 +38,10 @@ extension UIView
         mask.path = path.cgPath
         layer.mask = mask
     }
+    public func roundCorners(vm:ViewBaseDesignVM){
+        self.roundCorners(corners: vm.corners!, radius: vm.cornerRadius!)
+    }
+    
     
     
     //setting up shadow for uiview
@@ -44,6 +52,10 @@ extension UIView
         self.layer.shadowOffset = CGSize(width: width, height: height);
         self.layer.shadowOpacity = opacity;
     }
+    public func setMyShadow(vm:ShadowModel){
+        self.setMyShadow(radius: vm.radius!, width: vm.width!, height: vm.height!, opacity: vm.opacity!)
+    }
+    
     //MARK: setup recognizer
     //setup recognizer for this uiview
     public func setUIRecognizer(selector:Selector?){

@@ -33,7 +33,10 @@ public class ViewBaseDesignVM{
     public var borderColor:UIColor?;
     public var changePlaceholderColor:UIColor?
     public var borderWidth:CGFloat?;
+    public var borderRadius:CGFloat?;
     public var shadow:ShadowModel?;
+    public var corners:UIRectCorner?;
+    public var cornerRadius:CGFloat?;
 }
 
 public class TextFieldBaseVMBorders{

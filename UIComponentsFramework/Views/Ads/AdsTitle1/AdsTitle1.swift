@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 public class AdsTitle1: UIView {
     public let xibname:String="AdsTitle1";
     @IBOutlet var contentview: UIView!
