@@ -18,17 +18,13 @@ public class AdsTemplate1: UIView {
     @IBOutlet public weak var myimage: UIImageView!
     @IBOutlet public weak var mytitle: UILabel!
     @IBOutlet public weak var mySubDesc: UILabel!
+    var handler:IAdsTemplate1?;
+    
     var vm:ViewsBaseVM?{
         didSet{
             self.myimage.image=vm!.image;
             self.mytitle.text=vm!.title;
             self.mySubDesc.text=vm!.subDesc;
-        }
-    }
-    
-    public var eventOnClick: (() -> Void)?{
-        didSet{
-            contentview.setUIRecognizer(selector: #selector(onClick))
         }
     }
     override public init(frame: CGRect){
@@ -49,14 +45,16 @@ public class AdsTemplate1: UIView {
         //setting image top rounded corners
         myimage.roundCorners(corners: [.topLeft, .topRight], radius: 10);
     }
-    public func setup(vm:ViewsBaseVM){
-        
+    public func setup(vm:ViewsBaseVM, handler:IAdsTemplate1){
+        self.vm=vm;
+        self.handler=handler;
+        self.contentview.setUIRecognizer(selector: #selector(onClick))
     }
 }
 //MARK: setting up recognizer
 extension AdsTemplate1{
     @objc
     func onClick(){
-        eventOnClick?();
+        self.handler?.onClick(tag: self.vm!.tag!);
     }
 }

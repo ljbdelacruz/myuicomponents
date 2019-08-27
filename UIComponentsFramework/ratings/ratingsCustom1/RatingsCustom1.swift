@@ -8,8 +8,7 @@
 
 import UIKit
 
-public protocol IRatingsCustom1{
-    func onClick();
+public protocol IRatingsCustom1:IViewsBase{
 }
 
 public class RatingsCustom1: UIView {
@@ -17,7 +16,7 @@ public class RatingsCustom1: UIView {
     var handler:IRatingsCustom1?;
     var vm:RatingsCustom1VM?{
         didSet{
-            self.descLabel.text=vm!.desc;
+            self.descLabel.text=vm!.title;
             self.imgStar1.image=vm!.imageFullStar!;
             self.imgStar2.image=vm!.imageFullStar!;
             self.imgStar3.image=vm!.imageFullStar!;
@@ -69,13 +68,18 @@ extension RatingsCustom1{
     }
     @objc
     func onClick(){
-        handler!.onClick();
+        handler!.onClick(tag: vm!.tag!);
     }
 }
 
-public class RatingsCustom1VM{
+public class RatingsCustom1VM:ViewsBaseVM{
     public var ratings:Int?;
-    public var desc:String?;
-    public var imageFullStar:UIImage? = UIImage(named:"star");
-    public var imageHalfStar:UIImage?=UIImage(named:"half-star-shape")
+    public var imageFullStar:UIImage?
+    public var imageHalfStar:UIImage?
+    override init(){
+        super.init();
+        self.imageFullStar=UIImage(named:"star");
+        self.imageHalfStar=UIImage(named:"half-star-shape");
+    }
+    
 }
