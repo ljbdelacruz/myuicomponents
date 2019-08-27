@@ -109,6 +109,7 @@ extension OTP4DigitView:AutoTextFieldDelegate{
         autoTF4.clear()
         autoTF1.becomeFirstResponder()
     }
-    
-    
 }
+
+
+

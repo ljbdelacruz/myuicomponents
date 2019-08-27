@@ -21,18 +21,19 @@ public class TextFieldsBaseVM{
     public var isSecureEntry:Bool?=false
     public var isContainerTransparent:Bool?=false;
 }
-public class TextFieldDesignVM{
+public class TextFieldDesignVM:ViewBaseDesignVM{
+    public func setPlaceholderColor(view:UITextField){
+        view.changePlaceholderColor(color: bgColor!)
+    }
+}
+
+public class ViewBaseDesignVM{
     public var bgColor:UIColor?
     public var color:UIColor?;
     public var borderColor:UIColor?;
     public var changePlaceholderColor:UIColor?
     public var borderWidth:CGFloat?;
     public var shadow:ShadowModel?;
-    
-    public func setPlaceholderColor(view:UITextField){
-        view.changePlaceholderColor(color: bgColor!)
-    }
-    
 }
 
 public class TextFieldBaseVMBorders{

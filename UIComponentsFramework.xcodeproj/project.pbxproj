@@ -82,6 +82,7 @@
 		EE08A85D2312B9EA00AAB09E /* ButtonBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */; };
 		EE08A85F231348C900AAB09E /* baseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A85E231348C900AAB09E /* baseTVCell.swift */; };
 		EE08A8612313613800AAB09E /* TextFieldsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A8602313613800AAB09E /* TextFieldsBase.swift */; };
+		EE08A86323142CFC00AAB09E /* ViewsBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08A86223142CFC00AAB09E /* ViewsBaseVM.swift */; };
 		EE3EBA3B229419E50073F3AF /* Content3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBA3A229419E50073F3AF /* Content3View.xib */; };
 		EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3EBA3C22941A500073F3AF /* Content3View.swift */; };
 		EE3EBABC22983B490073F3AF /* card1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3EBABB22983B490073F3AF /* card1View.xib */; };
@@ -191,6 +192,7 @@
 		EE08A85C2312B9EA00AAB09E /* ButtonBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBase.swift; sourceTree = "<group>"; };
 		EE08A85E231348C900AAB09E /* baseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseTVCell.swift; sourceTree = "<group>"; };
 		EE08A8602313613800AAB09E /* TextFieldsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsBase.swift; sourceTree = "<group>"; };
+		EE08A86223142CFC00AAB09E /* ViewsBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsBaseVM.swift; sourceTree = "<group>"; };
 		EE3EBA3A229419E50073F3AF /* Content3View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Content3View.xib; sourceTree = "<group>"; };
 		EE3EBA3C22941A500073F3AF /* Content3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content3View.swift; sourceTree = "<group>"; };
 		EE3EBABB22983B490073F3AF /* card1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = card1View.xib; sourceTree = "<group>"; };
@@ -807,6 +809,7 @@
 				041074CD2293900500BE0F51 /* myProgressHUDBasic */,
 				EEB7A2072290E32C00A0C3F2 /* view1 */,
 				041074F02293CA2000BE0F51 /* BackgroundView.swift */,
+				EE08A86223142CFC00AAB09E /* ViewsBaseVM.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1097,6 +1100,7 @@
 				041074CB22938FA500BE0F51 /* UiUtil.swift in Sources */,
 				EE3EBAD1229A86670073F3AF /* AdvancePopupViewModel.swift in Sources */,
 				049A9EE522B362CC0053AC8A /* ImageBaseCacher.swift in Sources */,
+				EE08A86323142CFC00AAB09E /* ViewsBaseVM.swift in Sources */,
 				041074DC22939A3200BE0F51 /* PopupBasic1.swift in Sources */,
 				EE08A85F231348C900AAB09E /* baseTVCell.swift in Sources */,
 				EE3EBA3D22941A500073F3AF /* Content3View.swift in Sources */,
